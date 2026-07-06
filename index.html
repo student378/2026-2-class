@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-2학기 수업 편성 준비 방법 및 유의사항 안내(수업진행 서류 작성 등)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+:root{--pr:#1a3a6b;--pl:#2a5298;--bg:#f4f6f9;--ca:#fff;--bd:#d0d8e8;--tx:#1c2637;--ts:#4a5568;--sh:#e8f0fb;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans KR','맑은 고딕',sans-serif;background:var(--bg);color:var(--tx);font-size:14px;line-height:1.7;padding-top:0;}
+.hdr{background:linear-gradient(135deg,#1a3a6b,#2a5298 60%,#1a6ba0);color:#fff;padding:18px 26px 14px;position:fixed;top:0;left:0;right:0;z-index:100;box-shadow:0 4px 16px rgba(26,58,107,.25);}
+.hdr h1{font-size:18px;font-weight:700;margin-bottom:3px;}
+.hdr .sub{font-size:11px;opacity:.8;}
+.pbar{display:flex;gap:5px;margin-top:10px;flex-wrap:wrap;align-items:center;}
+.pbar span{font-size:11px;color:rgba(255,255,255,.6);margin-right:2px;}
+.pbtn{display:inline-flex;align-items:center;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:5px;padding:4px 10px;font-size:11px;font-family:inherit;font-weight:600;cursor:pointer;transition:background .15s;white-space:nowrap;}
+.pbtn:hover{background:rgba(255,255,255,.28);}
+.pbtn.all{background:rgba(245,166,35,.25);border-color:rgba(245,166,35,.6);color:#ffe599;}
+.pbtn.all:hover{background:rgba(245,166,35,.42);}
+.tnav{background:var(--pr);padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;position:fixed;left:0;right:0;z-index:99;box-shadow:0 2px 6px rgba(0,0,0,.2);}
+.tnav::-webkit-scrollbar{display:none;}
+.tbtn{background:transparent;border:none;color:rgba(255,255,255,.62);padding:11px 13px;cursor:pointer;font-family:inherit;font-size:12px;font-weight:500;white-space:nowrap;border-bottom:3px solid transparent;transition:all .2s;}
+.tbtn:hover{color:#fff;}
+.tbtn.on{color:#fff;border-bottom-color:#f5a623;font-weight:700;}
+.tbtn .tn{display:inline-block;background:rgba(255,255,255,.15);color:rgba(255,255,255,.8);border-radius:10px;font-size:10px;padding:1px 5px;margin-right:3px;font-weight:400;}
+.tbtn.on .tn{background:#f5a623;color:#1a3a6b;}
+.tab{display:none;padding:20px 20px 40px;max-width:980px;margin:0 auto;}
+.tab.on{display:block;}
+.sc{background:var(--ca);border:1px solid var(--bd);border-radius:10px;margin-bottom:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.sth{background:var(--sh);border-bottom:2px solid var(--pl);padding:10px 16px;font-size:14px;font-weight:700;color:var(--pr);}
+.sb{padding:14px 16px;}
+.sub{font-size:13px;font-weight:700;color:var(--pr);margin:14px 0 7px;padding-left:9px;border-left:3px solid var(--pl);}
+.sub:first-child{margin-top:0;}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0;}
+th{background:var(--pr);color:#fff;padding:8px 10px;text-align:center;font-weight:600;font-size:12px;border:1px solid rgba(255,255,255,.15);}
+td{padding:7px 10px;border:1px solid var(--bd);vertical-align:top;line-height:1.5;}
+tr:nth-child(even) td{background:#f8fafc;}
+.hr{background:#fff0ee;border:1px solid #f5bfb0;border-left:4px solid #e8501a;border-radius:6px;padding:9px 13px;margin:7px 0;font-size:13px;color:#c0392b;font-weight:600;}
+.hy{background:#fffbea;border:1px solid #f0d080;border-left:4px solid #f5a623;border-radius:6px;padding:9px 13px;margin:7px 0;font-size:13px;color:#7a5200;font-weight:600;}
+.note{background:#f0f4fa;border-radius:6px;padding:8px 12px;font-size:12px;color:var(--ts);margin:5px 0;border-left:3px solid #8bacd4;}
+.note b{color:var(--pr);}
+ul.dl,ol.dl{padding-left:18px;margin:5px 0;}
+ul.dl li,ol.dl li{margin-bottom:4px;line-height:1.6;font-size:13px;}
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:700;margin-right:3px;vertical-align:middle;}
+.bb{background:#dbeafe;color:#1e40af;}.br{background:#fee2e2;color:#b91c1c;}
+.bg{background:#d1fae5;color:#065f46;}.bo{background:#ffedd5;color:#9a3412;}
+.dlb{display:flex;align-items:flex-start;background:#fff7f0;border:1.5px solid #f5a623;border-radius:8px;padding:9px 13px;margin:7px 0;gap:10px;}
+.dlb .dd{font-size:13px;font-weight:700;color:#c05000;min-width:100px;flex-shrink:0;}
+.dlb .dc{font-size:13px;}
+.rb{background:#f9fafb;border:1px solid #cbd5e1;border-radius:8px;padding:10px 14px;margin:8px 0;font-size:12px;color:#374151;}
+.rb .rt{font-size:11px;font-weight:700;color:#64748b;margin-bottom:4px;}
+.ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px;margin:8px 0;}
+.ic{background:var(--sh);border:1px solid var(--bd);border-radius:8px;padding:10px 12px;}
+.ic .il{font-size:11px;color:#64748b;font-weight:600;margin-bottom:3px;}
+.ic .iv{font-size:13px;font-weight:700;color:var(--pr);}
+.sl{display:flex;flex-direction:column;gap:6px;margin:8px 0;}
+.si{display:flex;gap:10px;align-items:flex-start;}
+.sn{background:var(--pr);color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px;}
+p{font-size:13px;margin:3px 0;line-height:1.7;}
+strong{color:var(--pr);}
+.ptt{display:none;font-size:14px;font-weight:700;color:var(--pr);background:var(--sh);border-left:5px solid var(--pr);padding:7px 13px;margin:16px 0 10px;}
+.srch-wrap{background:rgba(255,255,255,.12);border-radius:8px;padding:8px 12px;margin-top:10px;display:flex;gap:7px;align-items:center;flex-wrap:wrap;}
+.srch-input{flex:1;min-width:160px;border:1px solid rgba(255,255,255,.4);border-radius:5px;background:rgba(255,255,255,.15);color:#fff;padding:5px 10px;font-size:12px;font-family:inherit;outline:none;}
+.srch-input::placeholder{color:rgba(255,255,255,.55);}
+.srch-input:focus{background:rgba(255,255,255,.25);border-color:rgba(255,255,255,.7);}
+.srch-btn{background:#f5a623;color:#1a3a6b;border:none;border-radius:5px;padding:5px 12px;font-size:12px;font-family:inherit;font-weight:700;cursor:pointer;white-space:nowrap;}
+.srch-btn:hover{background:#e09518;}
+.srch-btn.cls{background:rgba(255,255,255,.2);color:#fff;}
+.srch-btn.cls:hover{background:rgba(255,255,255,.35);}
+.srch-info{font-size:11px;color:rgba(255,255,255,.75);width:100%;}
+.srch-nav{display:flex;gap:4px;align-items:center;}
+.srch-nav button{background:rgba(255,255,255,.2);color:#fff;border:none;border-radius:4px;padding:4px 8px;font-size:11px;cursor:pointer;font-family:inherit;}
+.srch-nav button:hover{background:rgba(255,255,255,.35);}
+mark.sh{background:#ffeb3b;color:#1a3a6b;border-radius:2px;padding:0 1px;}
+mark.sh.cur{background:#ff9800;color:#fff;}
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
+  body{background:#fff;}
+  .hdr{position:static!important;box-shadow:none;padding:10px 16px 8px;}
+  .pbar{display:none!important;}
+  .tnav{display:none!important;}
+  .tab{display:none!important;padding:8px 14px;max-width:100%;}
+  .tab.ps{display:block!important;}
+  .ptt{display:block!important;}
+  .ptt.first{margin-top:4px;}
+  .sc{box-shadow:none!important;border:1px solid #c0cce0!important;margin-bottom:10px;page-break-inside:avoid;}
+  .sth{background:var(--sh)!important;}
+  th{background:#1a3a6b!important;color:#fff!important;}
+  tr:nth-child(even) td{background:#f8fafc!important;}
+  .hr{background:#fff0ee!important;border-left:4px solid #e8501a!important;}
+  .hy{background:#fffbea!important;border-left:4px solid #f5a623!important;}
+  .note{background:#f0f4fa!important;}
+  table{font-size:11px;}
+}
+@media(max-width:600px){.hdr{padding:12px;}.hdr h1{font-size:15px;}.tab{padding:12px 10px 28px;}.ig{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>📋 2026-2학기 수업 편성 준비 방법 및 유의사항 안내(수업진행 서류 작성 등)</h1>
+  <div class="sub">2026.7 / 교무처 학사지원팀 &middot; 학과 안내용</div>
+  <div class="pbar">
+    <span>🖨️ 인쇄:</span>
+    <button class="pbtn" onclick="doPrint(0)">① 강의실·실습실</button>
+    <button class="pbtn" onclick="doPrint(1)">② 분반·폐강신청</button>
+    <button class="pbtn" onclick="doPrint(2)">③ 수강인원 / 수강반</button>
+    <button class="pbtn" onclick="doPrint(3)">④ 교과분담·시간표</button>
+    <button class="pbtn" onclick="doPrint(4)">④-1 교원시간표 자가점검</button>
+    <button class="pbtn" onclick="doPrint(5)">⑤ 강의계획서 및 수업설계 입력</button>
+    <button class="pbtn" onclick="doPrint(6)">⑥ 수강신청</button>
+    <button class="pbtn" onclick="doPrint(7)">⑦ 기타업무</button>
+    <button class="pbtn all" onclick="doPrint(-1)">📄 전체 인쇄</button>
+  </div>
+  <div class="srch-wrap">
+    <span style="font-size:11px;color:rgba(255,255,255,.7);white-space:nowrap;">🔍 검색:</span>
+    <input class="srch-input" id="srchInput" type="text" placeholder="검색어를 입력하세요..." oninput="doSearch()" onkeydown="if(event.key==='Enter')nextMatch()">
+    <div class="srch-nav" id="srchNav" style="display:none;">
+      <button onclick="prevMatch()">◀</button>
+      <span id="srchCount" class="srch-info" style="width:auto;"></span>
+      <button onclick="nextMatch()">▶</button>
+    </div>
+    <button class="srch-btn cls" id="srchClear" style="display:none;" onclick="clearSearch()">✕ 초기화</button>
+  </div>
+</div>
+<div class="tnav">
+  <button class="tbtn on" onclick="sw(0)"><span class="tn">1</span>강의실·실습실</button>
+  <button class="tbtn" onclick="sw(1)"><span class="tn">2</span>분반·폐강신청</button>
+  <button class="tbtn" onclick="sw(2)"><span class="tn">3</span>수강인원 / 수강반</button>
+  <button class="tbtn" onclick="sw(3)"><span class="tn">4</span>교과분담·시간표</button>
+  <button class="tbtn" onclick="sw(4)"><span class="tn">4-1</span>교원시간표 자가점검</button>
+  <button class="tbtn" onclick="sw(5)"><span class="tn">5</span>강의계획서 및 수업설계 입력</button>
+  <button class="tbtn" onclick="sw(6)"><span class="tn">6</span>수강신청</button>
+  <button class="tbtn" onclick="sw(7)"><span class="tn">7</span>기타업무</button>
+</div>
+
+<div class="tab on" id="t0">
+<div class="ptt first">① 강의실·실습실 사용안내</div>
+
+<div class="sc"><div class="sth">🏫 강의실 배정(사용) 안내</div><div class="sb">
+  <table><tr><th>구분</th><th>1차 배정기간</th><th>2차 배정기간</th></tr>
+  <tr><td>강의실</td><td>그룹 내에서 배정</td><td>그룹 관계없이 시간표 미편성 시간에 배정 가능</td></tr>
+  <tr><td>컴퓨터실습실</td><td>그룹내에서 배정</td><td>기초융합교육원 컴퓨터실습실 중 시간표 미편성 시간에 배정가능</td></tr>
+  </table>
+  <div class="hr">🚨 기재되어 있지 않은 강의실, 실습실은 배정 불가</div>
+  <div class="sub">1차 배정기간</div>
+  <p><strong>2026.7.14(화) 14:00 ~ 7.16(목) 14:00</strong> — 그룹별 강의실 내에서 입력</p>
+  <div class="sub">2차 배정기간</div>
+  <p><strong>2026.7.21(화) 14:00 ~ 7.23(목) 16:00</strong></p>
+  <div class="hy">⚠️ 홈페이지 강의시간표 공지: <strong>8.3(월)</strong> 자료 기준으로 공지됨</div>
+  <p>특정 강의실(평가 및 인증관련)을 제외한 모든 강의실의 수업이 배정되지 않은 시간에 모든 학과 사용 가능</p>
+  <div class="sub">강의실/컴퓨터실습실 확인 방법</div>
+  <ul class="dl"><li>종합정보 &gt; 수업 &gt; 보고서(강좌관리) &gt; <strong>강의실사용빈도표</strong></li>
+  <li>종합정보 &gt; 수업 &gt; 보고서(강좌관리) &gt; <strong>강의실별강의시간표</strong></li>
+  <li>종합정보 &gt; 수업 &gt; 보고서(강좌관리) &gt; <strong>실습실사용빈도표</strong></li></ul>
+  <div class="note">컴퓨터실습실은 기초융합교육원 시간표 미편성 시간 사용 가능</div>
+</div></div>
+
+<div class="sc"><div class="sth">📌 강의실 배정 시 유의사항</div><div class="sb">
+  <ul class="dl">
+  <li>그룹별 배정된 강의실로 시간표 작성</li>
+  <li>강의실별 <strong>하루 6시간 이상</strong> 시간표 작성 (강의실 1개당 주당 27시간)</li>
+  <li>교양(그룹별 5~8교시) 요일의 경우 오전에 <strong>3시간 이상</strong> 강의실 작성</li>
+  <li>2025학년도 1학기 강의실 사용 빈도율: <strong>44.9%</strong> / 2025-2학기 강의실 빈도율: <strong>39.2%</strong></li>
+  </ul>
+  <div class="hy">⚠️ 그룹별로 함께 사용하는 강의실이므로, 반드시 그룹별로 논의하여 시간표 작성</div>
+  <div class="note" style="border-left:4px solid #1565c0;color:#1a3a6b;">※ <strong>강의실/실습실 사용 효율화를 위하여 수업배정시 분산 배정 요망</strong><br>&nbsp;&nbsp;(강의실/실습실 활용율은 50% 이하이나, 요일별 활용률의 불균형이 뚜렷함)<br><span style="color:#c0392b;font-weight:600;">&nbsp;&nbsp;- 요일별 분산 배정 : 화~목 집중을 피하고 월~금요일별로 골고루 배정 요망<br>&nbsp;&nbsp;- 시간대 분산 배정 : 1교시부터 우선 배정<br>&nbsp;&nbsp;- 강의실 1개당 주당 시수가 최소 27시간 이상이 되어야 함</span></div>
+  <div class="hy">⚠️ 1차 기간 이후 그룹과 상관없이 모든 학과에서 강의실(수업이 배정되어 있지 않은 시간)을 사용할 수 있으므로(인증 관련 강의실 제외), 신중히 배정 요망</div>
+  <div class="hy">⚠️ 모든 호관의 강의실에 배정이 가능하나, 외벽공사 미완료로 <strong>5호관은 ~ 9/13(일)까지 소음이 발생할 수 있으며, 주말에 내부 벽 인테리어 실시 예정</strong></div>
+  <div class="hr">🚨 개강 후 셋째 주 이후(지정보강일 연계 후) 강의실 원칙상 변경 금지 (휴보강 오류 발생)</div>
+  <div class="note"><b>오류 확인:</b> 종합정보 → 수업 → 보고서(강좌관리) → <b>강의시간표편성오류리스트</b></div>
+</div></div>
+
+<div class="sc"><div class="sth">🏢 그룹별 강의실 현황</div><div class="sb">
+  <table style="table-layout:fixed;width:100%;">
+  <colgroup><col style="width:40px"><col style="width:70px"><col style="width:auto"><col style="width:220px"></colgroup>
+  <tr><th>NO</th><th>구분</th><th>학과(전공)</th><th>강의실 호실</th></tr>
+  <tr><td>1</td><td style="white-space:nowrap;">1호관</td><td style="word-break:keep-all;word-wrap:break-word;">식품영양학과, 호텔조리전공, 카페베이커리전공, 피부메이크업전공, 뷰티화장품전공, 스포츠재활전공</td><td>2205, 2206, 2408, 3504, 7210</td></tr>
+  <tr><td>2</td><td style="white-space:nowrap;">2호관</td><td style="word-break:keep-all;word-wrap:break-word;">전기공학전공, 전자공학전공, 산업안전전공, 소방설비안전전공</td><td>2401, 2402, 2403</td></tr>
+  <tr><td>3</td><td style="white-space:nowrap;">3호관</td><td style="word-break:keep-all;word-wrap:break-word;">기계공학전공, 컴퓨터정보통신전공, IT비즈니스전공, 인공지능전공</td><td>3306, 3503</td></tr>
+  <tr><td>4</td><td style="white-space:nowrap;">5호관-1</td><td style="word-break:keep-all;word-wrap:break-word;">일본비즈니스전공, 호텔관광전공, 항공경영전공, 항공서비스학과, 경영정보전공, 세무회계전공</td><td>5310, 5311, 5605, 5606, 6205</td></tr>
+  <tr><td>5</td><td style="white-space:nowrap;">5호관-2</td><td style="word-break:keep-all;word-wrap:break-word;">유한바이오제약전공, 유한생명화공전공, 광고미디어전공, 방송영상전공, 방송문예창작전공, 방송연예전공</td><td>2404, 2407, 6308</td></tr>
+  <tr><td>6</td><td style="white-space:nowrap;">6호관</td><td style="word-break:keep-all;word-wrap:break-word;">산업디자인전공, 시각디자인전공, 애니메이션웹툰전공, 패션디자인전공, 실내건축전공</td><td>6208</td></tr>
+  <tr><td>7</td><td style="white-space:nowrap;">7호관</td><td style="word-break:keep-all;word-wrap:break-word;">사회복지전공, 아동보육전공, 컴퓨터소프트웨어전공, 게임콘텐츠전공</td><td>7209, 7306, 7307, 7312</td></tr>
+  <tr><td>8</td><td style="white-space:nowrap;">그 외</td><td style="word-break:keep-all;">반려동물보건학과</td><td>5506, B2101</td></tr>
+  <tr><td></td><td></td><td style="word-break:keep-all;">반려동물산업전공</td><td>-</td></tr>
+  <tr><td>9</td><td style="white-space:nowrap;">그 외</td><td style="word-break:keep-all;word-wrap:break-word;">작업치료과, 응급구조과, 치위생과, 자유전공학과</td><td>3104, 3105</td></tr>
+  <tr><td>10</td><td style="white-space:nowrap;">그 외</td><td style="word-break:keep-all;">보건의료행정학과</td><td>6206, 6207</td></tr>
+  <tr><td>11</td><td style="white-space:nowrap;">교양</td><td style="word-break:keep-all;">기초융합교육원</td><td>B2102, 2103, 2409, 5421, 5505, 5621, 6508</td></tr>
+  </table>
+</div></div>
+
+<div class="sc"><div class="sth">💻 그룹별 컴퓨터실습실 현황</div><div class="sb">
+  <div class="note">파란색 글자의 학과는 그룹별 강의실 관리학과</div>
+  <table style="table-layout:auto;width:100%;">
+  <tr><th style="width:40px">NO</th><th style="width:70px;white-space:nowrap;">구분</th><th>학과(전공)</th><th style="min-width:280px;">실습실 호실</th></tr>
+  <tr><td>1</td><td style="white-space:nowrap;">1호관</td><td style="word-break:keep-all;word-wrap:break-word;">식품영양학과, 호텔조리전공, 카페베이커리전공, 피부메이크업전공, <span style="color:#1565c0;font-weight:600;">뷰티화장품전공(1404)</span>, 스포츠재활전공</td><td>1404</td></tr>
+  <tr><td>2</td><td style="white-space:nowrap;">2호관</td><td style="word-break:keep-all;word-wrap:break-word;"><span style="color:#1565c0;font-weight:600;">전기공학전공(1401)</span>, <span style="color:#1565c0;font-weight:600;">전자공학전공(1405)</span>, <span style="color:#1565c0;font-weight:600;">산업안전전공(2305)</span>, <span style="color:#1565c0;font-weight:600;">소방설비안전전공(2104)</span></td><td>1401/1405/2305/2104</td></tr>
+  <tr><td>3</td><td style="white-space:nowrap;">3호관</td><td style="word-break:keep-all;word-wrap:break-word;"><span style="color:#1565c0;font-weight:600;">기계공학전공(2208,3106)</span>, <span style="color:#1565c0;font-weight:600;">컴퓨터정보통신전공(3304,3305)</span>, <span style="color:#1565c0;font-weight:600;">IT비즈니스전공(3509,3510)</span>, <span style="color:#1565c0;font-weight:600;">인공지능전공(1403,2207)</span></td><td style="word-break:break-all;">2208,3106 / 3304,3305 / 3509,3510 / 1403,2207</td></tr>
+  <tr><td>4</td><td style="white-space:nowrap;">5호관-1</td><td style="word-break:keep-all;word-wrap:break-word;"><span style="color:#1565c0;font-weight:600;">일본비즈니스전공(5508)</span>, <span style="color:#1565c0;font-weight:600;">호텔관광전공(5608)</span>, 항공경영전공, 항공서비스학과, <span style="color:#1565c0;font-weight:600;">경영정보전공(5313)</span>, <span style="color:#1565c0;font-weight:600;">세무회계전공(5408)</span></td><td>5508/5608/5313/5408</td></tr>
+  <tr><td>5</td><td style="white-space:nowrap;">5호관-2</td><td style="word-break:keep-all;word-wrap:break-word;">유한바이오제약전공, 유한생명화공전공, <span style="color:#1565c0;font-weight:600;">광고미디어전공(5312)</span>, <span style="color:#1565c0;font-weight:600;">방송영상전공(5409,6201)</span>, <span style="color:#1565c0;font-weight:600;">방송문예창작전공(5406)</span>, 방송연예전공</td><td>5312/5406/6201,5409</td></tr>
+  <tr><td>6</td><td style="white-space:nowrap;">6호관</td><td style="word-break:keep-all;word-wrap:break-word;"><span style="color:#1565c0;font-weight:600;">산업디자인전공(6305~6307)</span>, <span style="color:#1565c0;font-weight:600;">패션디자인전공(6401,6402)</span>, <span style="color:#1565c0;font-weight:600;">시각디자인전공(6502,6503,6506,6507)</span>, <span style="color:#1565c0;font-weight:600;">실내건축전공(6301~6303)</span>, <span style="color:#1565c0;font-weight:600;">애니메이션웹툰전공(6202,6203)</span></td><td style="word-break:break-all;">6305~6307 / 6401,6402 / 6502,6503,6506,6507 / 6301~6303 / 6202,6203</td></tr>
+  <tr><td>7</td><td style="white-space:nowrap;">7호관</td><td style="word-break:keep-all;word-wrap:break-word;"><span style="color:#1565c0;font-weight:600;">사회복지전공(7305)</span>, 아동보육전공, <span style="color:#1565c0;font-weight:600;">컴퓨터소프트웨어전공(5407,7202,7206,7207)</span>, <span style="color:#1565c0;font-weight:600;">게임콘텐츠전공(7203~7205,7211)</span></td><td style="word-break:break-all;">7305 / 5407,7202,7206,7207 / 7203~7205,7211</td></tr>
+  <tr><td>8</td><td style="white-space:nowrap;">그 외</td><td style="word-break:keep-all;">반려동물보건학과, 반려동물산업전공</td><td>-</td></tr>
+  <tr><td>9</td><td style="white-space:nowrap;">그 외</td><td style="word-break:keep-all;">작업치료과, 응급구조과, 자유전공학과, 치위생과</td><td>-</td></tr>
+  <tr><td>10</td><td style="white-space:nowrap;">그 외</td><td style="word-break:keep-all;">보건의료행정학과</td><td>5201, 5202</td></tr>
+  <tr><td>11</td><td style="white-space:nowrap;">교양</td><td style="word-break:keep-all;">기초융합교육원</td><td>2201, 2105, 2209, 3407, 5322, 5507, 8601</td></tr>
+  </table>
+  <div class="sub">컴퓨터실습실 배정 시 유의사항</div>
+  <ul class="dl">
+  <li>그룹별 컴퓨터실습실에서 시간표 작성, 관리 학과와 협의</li>
+  <li>컴퓨터실습실별 <strong>하루 6시간 이상</strong> 시간표 작성 (주당 27시간), 교양 요일 오전 3시간 이상 작성</li>
+  <li>2025-1학기 컴퓨터실습실 사용 빈도율: <strong>42.7%</strong> / 2025-2학기 컴퓨터실습실 사용 빈도율: <strong>43.7%</strong></li>
+  </ul>
+  <div class="hy">⚠️ 그룹별로 함께 사용하는 실습실이므로, 반드시 그룹별로 논의하여 시간표 작성</div>
+  <div class="note">※ <strong>1차 기간 이후</strong>: 기초융합교육원의 컴퓨터실습실(수업이 배정되어 있지 않은 시간)은 모든 학과에서 사용 가능</div>
+  <div class="hr">🚨 개강 후 셋째 주 이후(지정보강일 연계 후) 강의실 원칙상 변경 금지 (휴보강 오류 발생)</div>
+  <div class="note">※ 강의실 입력 후 오류 확인: 종합정보 → 수업 → 보고서(강좌관리) → <b>강의시간표편성오류리스트</b></div>
+</div></div>
+</div>
+
+<div class="tab" id="t1">
+<div class="ptt">② 분반 및 소규모 강좌 신청서 제출 〈붙임 2: 서식 2,3,4〉</div>
+
+<div class="sc"><div class="sth">📊 분반 신청</div><div class="sb">
+  <div class="sub">가. 제출 일정 <span class="badge br">기한 엄수</span></div>
+  <table><tr><th>구분</th><th>일정</th><th>비고</th></tr>
+  <tr><td><span class="badge bb">1차</span> 취창업멘토링, 실습과목</td><td><strong>7.8(수) 10:00 ~ 7.9(목) 14:00</strong></td><td></td></tr>
+  <tr><td><span class="badge bb">2차</span> 2, 3학년 과목</td><td><strong>8.13(목) 10:00 ~ 8.18(화) 14:00</strong></td><td rowspan="3" style="vertical-align:middle;text-align:center;">수강신청 인원 확인 후 필요시</td></tr>
+  <tr><td><span class="badge bb">3차</span> 1학년 과목</td><td><strong>8.19(수) 10:00 ~ 14:00</strong></td></tr>
+  <tr><td><span class="badge bb">4차</span> 개방복합 과목</td><td><strong>8.20(목) 10:00 ~ 14:00</strong></td></tr>
+  </table>
+  <div class="sub">나. 분반 기준</div>
+  <table><tr><th>교과목 구분</th><th>이론</th><th>취·창업멘토링</th><th>실습</th></tr>
+  <tr><td>기준 인원</td><td>15~45명</td><td>15~30명</td><td>15~40명</td></tr>
+  </table>
+  <div class="note">※ 교육과정표상 실습교과목이라도 강의실 수업인 경우 <strong>15~45명 기준</strong>으로 편성</div>
+  <div class="hr">🔴 분반 기준 범위 내 수강인원이면 1개반만 운영.</div>
+
+  <div class="rb"><div class="rt">📜 2026년도 기관평가인증제 — 기준 2.1.3</div>
+  충족기준: 전공교과목 강좌당 학생 수 평균 <strong>33명 이하</strong>이거나 모든 전공교과목 강좌당 학생 수 <strong>40명 이하</strong><br>
+  전공강좌당 학생 수 = 총 전공강좌 수강 학생 수(B) / 총 전공강좌 개설 강좌 수(A)</div>
+  <div class="sub">분반 사유 예시</div>
+  <table><tr><th>차수</th><th>사유</th></tr>
+  <tr><td>1차</td><td>① 실습실 수용인원 및 장비 수가 제한된 경우<br>② 장비 운용상 위험 요소로 학생 안전사고 우려가 있는 경우</td></tr>
+  <tr><td>2·3·4차</td><td>③ 복학생 다수 유입으로 분반기준 초과<br>④ 전공강좌당 학생 수가 평균 33명 초과 등</td></tr>
+  </table>
+  <div class="sub">다. 제출 방법</div>
+  <p>수업관련 진행서식 <strong>〈서식2, 3〉 [분반신청서]</strong> 작성 및 서명 후 전자문서(업무연락) 제출</p>
+  <div class="note">※ 이론/실습 교과목 구분하여 양식 사용</div>
+</div></div>
+
+<div class="sc"><div class="sth">🔒 소규모 강좌 (폐강 예외 강좌) 신청 〈서식 4〉 <span class="badge br" style="margin-left:6px">폐강 절차 변경 — 반드시 확인!</span></div><div class="sb">
+  <div class="hr">🚨 폐강 절차가 변경되었으므로 반드시 아래 내용 확인 후 적용!</div>
+  <div class="sub">가. 폐강 처리 절차 변경 및 소규모강좌(폐강 예외 강좌) 정의 변경</div>
+  <table style="table-layout:auto;width:100%;">
+  <tr><th>구분</th><th>기준</th><th>내용</th><th>처리방식</th></tr>
+  <tr>
+    <td style="white-space:nowrap;"><span class="badge br">1차 폐강 대상 강좌</span></td>
+    <td style="white-space:nowrap;">수강인원 10명 미만</td>
+    <td>전학년 수강신청 종료 후 10명 미만 강좌 일괄 폐강 처리</td>
+    <td style="white-space:nowrap;"><strong>일괄 폐강 처리</strong></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><span class="badge bo">1차 폐강 유예 강좌</span></td>
+    <td style="white-space:nowrap;">수강인원 10명 이상 15명 미만</td>
+    <td>1차 폐강 처리시 처리되지 않고 유예</td>
+    <td style="white-space:nowrap;"><strong>일괄 유예 처리</strong></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><span class="badge br">2차 폐강 대상 강좌</span></td>
+    <td style="white-space:nowrap;">수강인원 15명 미만</td>
+    <td>수강정정기간 종료 후 15명 미만인 강좌</td>
+    <td style="white-space:nowrap;"><strong>일괄 폐강 처리</strong></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><span class="badge bg">소규모 강좌<br>(폐강 예외 강좌)</span></td>
+    <td style="word-break:keep-all;">수강인원 15명 미만<br>(1) ~ (4) 중 해당하는 강좌</td>
+    <td style="color:#1a3a6b;word-break:keep-all;">(1) 자격증 취득 필수 강좌 &nbsp;(2) 정부지원사업 참여 강좌 &nbsp;(3) 인증관련 필수 과목<br>(4) 재학인원 15명 이하 학과의 경우 ①과 ②를 모두 충족하는 강좌만 신청 가능<br>&nbsp;&nbsp;① 재학인원 80% 이상 수강 강좌<br>&nbsp;&nbsp;② 전체 개설강좌의 85% 이하 운영<br>&nbsp;&nbsp;</td>
+    <td style="white-space:nowrap;"><strong>폐강 예외 처리</strong></td>
+  </tr>
+  </table>
+  <div class="note">※ <strong>폐강 유예 강좌</strong>: 전학년 수강 신청 종료 후 수강인원이 10명 이상 15명 이하 강좌 (최종 폐강시(수강신청 정정기간 종료)까지 폐강 보류, 최종 폐강시 15명 미만이며, 폐강 예외강좌에 해당하지 않을 경우 폐강)</div>
+  <div class="note" style="color:#1565c0;">※ <strong>소규모강좌(폐강 예외 강좌) 신청 기준(조건)</strong>:<br>&nbsp;(1) 자격증 취득 필수 강좌 &nbsp;(2) 정부지원사업 참여 강좌 &nbsp;(3) 인증관련 필수 과목<br>&nbsp;(4) 재학인원 15명 이하 학과의 경우 ①과 ②를 모두 충족하는 강좌만 신청 가능<br>&nbsp;&nbsp;&nbsp;① 재학인원 80% 이상 수강 강좌<br>&nbsp;&nbsp;&nbsp;② 전체 개설강좌의 85% 이하 운영<br>&nbsp;&nbsp;&nbsp;</div>
+  <div class="note">※ <strong>2개반 이상 개설된 경우 신청 불가</strong> (예) 1반-25명, 2반-12명 : 2반에 대하여 소규모강좌 신청 불가함)</div>
+  <div class="note">※ 소규모 강좌를 신청했다 하더라도, 추후 신청 기간에 기준(조건)이 부합하지 않을 경우 <strong>폐강 처리</strong></div>
+  <div class="note">※ 종합정보에서 재학생 인원 및 수강인원 바로 확인 가능: 종합정보 &gt; 수강 &gt; 보고서 &gt; <b>학과별수강신청인원현황</b></div>
+  <div class="sub">나. 폐강 처리 일정</div>
+
+  <!-- 흐름도 -->
+  <div style="display:flex;align-items:stretch;gap:0;justify-content:center;margin:14px 0 18px;flex-wrap:wrap;">
+    <div style="background:#fffde7;border:2px solid #f5a623;border-radius:8px;padding:14px 18px;text-align:center;min-width:160px;flex:1;max-width:220px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:13px;font-weight:700;color:#1a3a6b;">소규모 강좌 접수</div>
+      <div style="font-size:12px;color:#7a5200;margin-top:4px;">(폐강 예외 강좌 접수)</div>
+    </div>
+    <div style="display:flex;align-items:center;padding:0 10px;font-size:22px;color:#64748b;">→</div>
+    <div style="background:#fffde7;border:2px solid #f5a623;border-radius:8px;padding:14px 18px;text-align:center;min-width:160px;flex:1;max-width:220px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:13px;font-weight:700;color:#1a3a6b;">1차 일괄 폐강</div>
+      <div style="font-size:12px;color:#7a5200;margin-top:4px;">(10명 미만 수강 강좌 폐강)<br>(폐강 예외 강좌 제외)</div>
+    </div>
+    <div style="display:flex;align-items:center;padding:0 10px;font-size:22px;color:#64748b;">→</div>
+    <div style="background:#fffde7;border:2px solid #f5a623;border-radius:8px;padding:14px 18px;text-align:center;min-width:160px;flex:1;max-width:220px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:13px;font-weight:700;color:#1a3a6b;">2차 일괄 폐강</div>
+      <div style="font-size:12px;color:#7a5200;margin-top:4px;">(15명 미만 수강 강좌 폐강)<br>(폐강 예외 강좌 제외)</div>
+    </div>
+  </div>
+
+  <!-- 업무 순서 표 -->
+  <table style="table-layout:auto;width:100%;">
+  <tr>
+    <th style="width:50px;white-space:nowrap;">업무<br>순서</th>
+    <th style="min-width:160px;">업무 구분</th>
+    <th style="min-width:170px;">시기<br><span style="font-weight:400;font-size:11px;">(예: 2026-2학기 일정(안))</span></th>
+    <th>업무</th>
+    <th style="min-width:120px;">비고</th>
+  </tr>
+  <tr>
+    <td style="text-align:center;">1</td>
+    <td style="word-break:keep-all;">1차 폐강 예정 강좌 학과 안내<br>소규모 강좌(폐강 예외 강좌) 접수</td>
+    <td style="word-break:keep-all;">전학년 수강신청 종료 후<br><strong>(2026.8.20)</strong></td>
+    <td style="word-break:keep-all;">
+      1. 10명 미만 수강강좌 폐강 예정 안내<br>
+      2. 소규모 강좌(폐강 예외 강좌) 접수<br>
+      3. 1차 폐강 처리일 안내
+    </td>
+    <td rowspan="3" style="text-align:center;vertical-align:middle;word-break:keep-all;color:#1a3a6b;font-weight:600;">10명 미만 강좌 폐강<br>(소규모 강좌 예외)</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">2</td>
+    <td style="white-space:nowrap;">1차 폐강 처리</td>
+    <td style="word-break:keep-all;">1차 폐강시<br><strong>(2026.8.21.)</strong></td>
+    <td>1차 폐강 전산 처리(일괄 처리)</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">3</td>
+    <td style="white-space:nowrap;">1차 폐강 처리 후 홈페이지 공지</td>
+    <td style="word-break:keep-all;">개강 전<br><strong>(2026.8.21.)</strong></td>
+    <td>1차 폐강 강좌 및 폐강 유예 강좌 안내</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">4</td>
+    <td style="white-space:nowrap;">2차 폐강 예정 강좌 홈페이지 공지</td>
+    <td style="word-break:keep-all;">학생 수강신청 정정기간 종료 후<br><strong>(2026.8.26.)</strong></td>
+    <td style="word-break:keep-all;">
+      1. 2차 폐강 예정 강좌 안내(15명 미만 강좌)<br>
+      2. 2차 폐강 처리일 안내<br>
+      3. 폐강 예정 강좌 수강 학생 수강 정정 안내
+    </td>
+    <td rowspan="2" style="text-align:center;vertical-align:middle;word-break:keep-all;color:#1a3a6b;font-weight:600;">15명 미만 강좌 폐강<br>(소규모 강좌 제외)</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">5</td>
+    <td style="white-space:nowrap;">2차 폐강 처리</td>
+    <td style="word-break:keep-all;">학과 수강신청 정정기간 종료 후<br><strong>(2026.8.28.)</strong></td>
+    <td style="word-break:keep-all;">
+      1. 2차 폐강 전산 처리(일괄 처리)<br>
+      2. 2차 폐강 강좌 홈페이지 안내
+    </td>
+  </tr>
+  </table>
+  <div class="sub">다. 소규모 강좌 운영 신청서 (폐강 예외 과목 신청) 제출 방법</div>
+  <p>수업진행관련서식 <strong>〈서식4〉 [소규모 강좌(15명 미만) 운영 신청서(폐강 예외 신청서)]</strong> 작성 및 서명 후 업무연락 제출</p>
+</div></div>
+</div>
+
+<div class="tab" id="t2">
+<div class="ptt">③ 수강인원 / 수강반</div>
+<div class="sc"><div class="sth">👥 강좌별 최대 수강인원 제한 설정 및 예외 신청 〈서식 5〉</div><div class="sb">
+  <div class="dlb"><div class="dd">📅 신청 기간</div><div class="dc"><strong>2026.7.14(화) 14:00 ~ 8.19(수) 16:00</strong></div></div>
+  <div class="sub">가. 유의사항</div>
+  <ul class="dl">
+  <li>분반 현황, 실습실 수용인원, 교육 효과를 고려하여 <strong>학과 직접 설정</strong> (2022-1학기부터 적용)</li>
+  <li>수강인원 <strong>15명 미만의 경우 폐강</strong>되므로 적정 수준 설정 유의</li>
+  <li>이론 <strong>15~45명</strong> / 실습 <strong>15~40명</strong> 기준 내에서 학과 설정 가능. 범위 외 설정 필요 시 교무처로 예외 신청서 제출</li>
+  <li>개방복합교과목은 수강인원 제한 지양 (실습장비 부족 또는 분반 불가능한 경우만 신청)</li>
+  </ul>
+  <div class="hy">💡 개방복합교과목: 학생이 직접 타학과에 개설된 모든 과목을 수강신청 가능 (전 학년 수강신청기간 및 수강정정기간)<br>※ 인원 설정 시 교과목 담당교수와 논의</div>
+  <div class="sub">나. 제출 방법</div>
+  <table><tr><th>구분</th><th>방법</th></tr>
+  <tr><td>40명 이하로 설정 시</td><td>종합정보시스템에서 직접 수강인원 제한 설정</td></tr>
+  <tr><td>40명 초과하여 설정 시</td><td><strong>〈서식5〉 강좌별 최대 수강인원 제한 예외 신청서 양식 작성 후 교무처 제출</strong></td></tr>
+  </table>
+  <div class="note"><b>시스템 경로:</b> 종합정보시스템 &gt; 수업 &gt; 강좌관리 &gt; 교과분담표/담당교수관리 &gt; 수강인원 제한 설정</div>
+</div></div>
+
+<div class="sc"><div class="sth">🔄 재학생 및 복학 예정자 수강반 조정</div><div class="sb">
+  <div class="sub">가. 수강반 조정 사유</div>
+  <div class="rb"><ol class="dl" style="margin:0;">
+  <li>입학정원 확대/감축으로 개설 반이 증가/축소된 경우</li>
+  <li>트랙제 운영에 따라 트랙별로 별도 반을 운영해야 하는 경우</li>
+  <li>학적변동으로 인하여 반별 예상 재학인원이 큰 폭으로 차이나는 경우</li>
+  </ol></div>
+
+  <div class="sub">나. 조정 대상</div>
+  <p>재학생 및 복학예정자</p>
+
+  <div class="sub">다. 조정 기간</div>
+  <div class="dlb"><div class="dd">📅 조정 기간</div><div class="dc"><strong style="color:#c0392b;">2026.7.6(월) 10:00 ~ 8.10(월) 16:00</strong></div></div>
+
+  <div class="sub">라. 조정 방법</div>
+  <p><strong>학생 소속 학과(전공)에서 직접 변경</strong></p>
+  <div class="rb">
+  <div class="rt">[ 종합정보시스템 &gt; 학적 &gt; 학적관리 &gt; 수강반관리 ]</div>
+  ① 재학생/복학예정자 선택 ⇨ ② 조회 ⇨ ③ 학생별 원반 및 수강반 확인 ⇨ ④ 필요시 수강반 조정 ⇨ ⑤ 저장
+  </div>
+
+  <div class="sub">마. 기타사항</div>
+  <ul class="dl">
+  <li>교과목 유형별("이론 및 실습" / "취창업멘토링" / "교양") 학급(분반) 편성 기준이 상이하므로 학생별 수강반 조정 시 유의</li>
+  <li style="background:#fffbea;padding:6px 8px;border-radius:4px;">폐지된 분반으로 수강반이 설정되어 있는 학생은 수강신청 기간에 전공 교과목이 전혀 조회되지 않음<strong style="color:#c0392b;">(수강신청 기간에 강좌가 조회되지 않는다는 학생 민원 다수 발생)</strong><br>따라서, 수강반을 변경 해주어야 수강신청이 가능함</li>
+  <li style="color:#c0392b;font-weight:600;">수강신청은 선착순 마감되므로, 수강반 미조정으로 인한 학생 불이익이 발생하지 않도록 각 학과(전공)에서는 반드시 사전에 확인 및 조치</li>
+  </ul>
+</div></div>
+</div>
+
+<div class="tab" id="t3">
+<div class="ptt">④ 수업진행서류(교과분담표, 강의시간표) 전산입력 〈붙임 2: 서식 9~18〉</div>
+
+<div class="sc"><div class="sth">📅 전산입력 일정 <span class="badge br" style="margin-left:6px">학사운영투명성지수 반영</span></div><div class="sb">
+  <div class="dlb"><div class="dd">📅 입력 기간</div><div class="dc"><strong>2026.7.14(화) 14:00 ~ 7.16(목) 14:00</strong> <span class="badge br">기한 엄수</span></div></div>
+  <div class="hr">🚨 교과분담표·강의시간표 입력 기간 준수는 <strong>학사운영투명성지수 및 교수업적평가에 반영</strong></div>
+</div></div>
+
+<div class="sc"><div class="sth">⚖️ 교과분담표 작성 시 유의사항</div><div class="sb">
+  <div class="sub">가. 교원 1일 최대 수업시간 및 연속강의 제한</div>
+  <div class="rb"><div class="rt">📜 수업 운영에 관한 규정 제6조(강의시간 배정)</div>
+  ② 교원 1일 최대 수업시간: <strong>6시간 이내</strong>(취·창업멘토링 미포함). 비전임 교원 및 강사는 야간 포함 <strong>9시간 이내</strong><br>
+  ③ 교원은 <strong>연속 4시간을 초과하여 강의시간을 배정할 수 없다</strong></div>
+  <table><tr><th>항목</th><th>기준</th><th>초과 시 서식</th></tr>
+  <tr><td>1일 최대 수업시간</td><td>전임: <strong>6시간</strong> / 비전임·강사(야간포함): <strong>9시간</strong></td><td><span class="badge bo">〈서식11〉</span> 1일 최대 수업시간 초과 시간표 편성 사유서</td></tr>
+  <tr><td>연속강의</td><td><strong>연속 4시간 초과 불가</strong></td><td><span class="badge bo">〈서식12〉</span> 연속강의 제한 초과 시간표 편성 사유서</td></tr>
+  </table>
+  <div class="sub">나. 전임교원 주당 수업일 준수</div>
+  <div class="rb"><div class="rt">📜 복무 규정 제19조·제21조</div>
+  근무시간: 9시~18시, 토요일 휴무 원칙 / 전임교원 연구일 매주 1일<br>
+  수업일 — 보직교원(교무위원 제외): <strong>2일 이상</strong> / 평교원(보직 제외): <strong>3일 이상</strong></div>
+  <div class="sub">다. 전임교원 근무일 준수</div>
+  <ul class="dl">
+  <li>매주 연구일 1일을 제외한 <strong>4일간 근무</strong> 편성(면담시간 포함)</li>
+  <li>면담 가능 시간은 종합정보시스템 내에 입력 후 공지</li>
+  </ul>
+  <div class="sub">라. 강의 시간/과정/학년별 균등한 교과 분담</div>
+  <p>전문학사/전공심화, 1·2·3학년 강좌에 전임·겸임교원, 강사를 <strong>차별 없이 균등한 비율로 배정</strong></p>
+  <div class="sub">마. 기타 유의사항</div>
+  <ul class="dl">
+  <li>주중(월~금) 학과별 <strong>전임교원 1인 이상 교내 근무 권장</strong>, 면담 가능 시간 입력(주당 3시간 이상) 및 공지</li>
+  <li><strong>학과장/보직 교원은 월요일 13시 이후 강의 배정 지양</strong> (학과장 회의)</li>
+  <li><strong>본부장, 원장, 센터장 등은 수요일 오전 강의 배정 지양</strong> (확대 교무위원회의)</li>
+  <li>전임교원은 학기당 최소 1강좌 이상 <strong>실습과목 담당 권장</strong></li>
+  <li>전임교원 <strong>1교시 시간표 편성 및 수업 진행 권장</strong></li>
+  <li>타학과 강의 담당 교원은 원소속학과에 반드시 통보, 원소속학과에서 한계시수·1일 최대·연속강의 기준 확인</li>
+  <li>동일교원이 동일전공의 동일학년·동일반을 <strong>2개까지만 담당 가능</strong> (책임수업시간 미인정 강좌 제외)<br>
+  ※ 미인정 강좌: 취·창업멘토링, 캡스톤디자인, e러닝, 팀티칭강좌, TRUST대학생활적응, 스텝바이스텝<br>
+  ※ 단, 부득이한 사항이 있는 경우, 총장의 승인을 얻어 담당(수업진행관련서식 〈서식18〉 동일교원 동일전공의 동일학년·동일반 초과 담당 사유서 작성 후 업무연락 제출)</li>
+  </ul>
+  <div class="hy">📅 2026-2학기 공휴일 많은 요일: <strong>월요일 1일(10.5), 목요일 1일(9.24), 금요일 2일(9.25, 10.9)</strong><br>→ <strong>금요일(공휴일 2일)</strong>은 전임교원 배정 권고, <strong>화·수요일(공휴일 없음)</strong>에 강사·겸임교원 배정 권장</div>
+  <div class="note">※ 전공심화 운영 학과 소속 교원은 전문학사 혹은 전공심화 과목을 <strong>1개 이상 반드시 담당</strong></div>
+  <div style="background:#fff3cd;border:2px solid #f5a623;border-left:6px solid #e8501a;border-radius:8px;padding:12px 16px;margin:10px 0;font-size:13px;font-weight:700;color:#1a3a6b;">🔔 <span style="color:#c0392b;">※ 시간표 편성 시 수시로</span> [교원시간표 자가점검 체크리스트] 및 [교원시간표 자가점검 항목별 미준수 리스트] <span style="color:#c0392b;">확인 — 필수!</span></div>
+</div></div>
+
+<div class="sc"><div class="sth">💼 교원별 책임시수 및 한계시수 <span class="badge br" style="margin-left:6px">법인 감사 지적사항</span></div><div class="sb">
+  <table><tr><th>구분</th><th></th><th>주당 책임/담당 강의시수</th><th>주당 한계/최대 강의시수</th></tr>
+  <tr><td rowspan="5"><strong>전임교원</strong></td><td>교무위원</td><td>0</td><td>6</td></tr>
+  <tr><td>기타 보직교원</td><td>6</td><td>16</td></tr>
+  <tr><td>일반교원</td><td><strong>9</strong></td><td><strong>24</strong></td></tr>
+  <tr><td>산학협력(중점)교원</td><td>6</td><td>15</td></tr>
+  <tr><td>강의전담/외국인교수</td><td>9</td><td>24</td></tr>
+  <tr><td rowspan="3"><strong>비전임교원</strong></td><td>특임교수</td><td>0~6</td><td>9</td></tr>
+  <tr><td>겸임교수</td><td>2~9</td><td>12</td></tr>
+  <tr><td>강사</td><td>0~6</td><td>9</td></tr>
+  </table>
+  <div class="hr">🚨 <b>가.</b> 직급별 책임/담당 수업시간 반드시 준수 / 한계/최대 수업시간 초과 불가 (<strong>강사·겸임교원은 총장 승인도 불가</strong>)</div>
+  <div class="note"><b>나.</b> 겸임교원: 교원확보율 산정 시 9시간이 1인으로 인정 — 유의</div>
+  <div class="note"><b>다.</b> 학과장은 겸임교원 및 강사에게 직급별 수업시간을 정확히 안내, 최대 시간 초과하지 않도록 사전 안내 (강사료 문의: 기초융합교육원 ☏ 320)</div>
+  <div class="note"><b>라.</b> 책임시수 미포함 과목: 취·창업멘토링, 캡스톤디자인, e-러닝 및 팀티칭, 스텝바이스텝</div>
+</div></div>
+
+<div class="sc"><div class="sth">📝 교과분담표 입력 방법</div><div class="sb">
+  <div class="note"><b>경로:</b> 종합정보시스템 &gt; 수업 &gt; 강좌관리 &gt; 교과분담표/담당교수관리</div>
+  <ul class="dl">
+  <li>사전 제출한 분반 신청서에 따라 승인·처리 여부 확인</li>
+  <li>강좌별 담당 교수 입력 시 <strong>동명이인 주의</strong>, 퇴사예정교원 입력 금지</li>
+  <li>퇴사교원 확인: 교원시간표 자가점검 체크리스트 하단 표기 → 확인 시 <strong>반드시 교과분담 정정</strong></li>
+  <li>입력 완료 후 <strong>"작업저장"</strong></li>
+  </ul>
+</div></div>
+
+<div class="sc"><div class="sth">🕐 강의시간표 입력 방법</div><div class="sb">
+  <div class="note"><b>경로:</b> 종합정보시스템 &gt; 수업 &gt; 강좌관리 &gt; 강의시간표관리</div>
+  <div class="hy">⚠️ 주간강좌: <strong>월~금 1교시(09:00) ~ 9교시(17:50) 편성 원칙</strong>. 야간 및 토·일은 편성 불가<br>
+  ※ P-TECH 및 전공심화 기계시스템공학과(야간과정)는 토요일 가능<br>
+  ※ 기준 초과 편성 시: <strong>〈서식16〉 강의시간표 기준교시 초과 편성 사유서 제출</strong></div>
+  <table><tr><th colspan="2">주간 (50분 수업/10분 휴식)</th><th colspan="2">야간 (45분 수업/5분 휴식)</th></tr>
+  <tr><th>교시</th><th>시간</th><th>교시</th><th>시간</th></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">1교시</td><td>09:00~09:50</td><td style="text-align:center;font-weight:700;color:#1a3a6b">10교시</td><td>18:00~18:45</td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">2교시</td><td>10:00~10:50</td><td style="text-align:center;font-weight:700;color:#1a3a6b">11교시</td><td>18:50~19:35</td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">3교시</td><td>11:00~11:50</td><td style="text-align:center;font-weight:700;color:#1a3a6b">12교시</td><td>19:40~20:25</td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">4교시</td><td>12:00~12:50</td><td style="text-align:center;font-weight:700;color:#1a3a6b">13교시</td><td>20:30~21:15</td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">5교시</td><td>13:00~13:50</td><td style="text-align:center;font-weight:700;color:#1a3a6b">14교시</td><td>21:20~22:05</td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">6교시</td><td>14:00~14:50</td><td style="text-align:center;font-weight:700;color:#1a3a6b">15교시</td><td>22:10~22:55</td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">7교시</td><td>15:00~15:50</td><td colspan="2"></td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">8교시</td><td>16:00~16:50</td><td colspan="2"></td></tr>
+  <tr><td style="text-align:center;font-weight:700;color:#1a3a6b">9교시</td><td>17:00~17:50</td><td colspan="2"></td></tr>
+  </table>
+  <div class="sub">유의사항</div>
+  <ul class="dl">
+  <li>실제 강의 시간, 강의 장소 입력. 강의실·실습실 모두 사용하는 과목은 시간별로 각각 배정</li>
+  <li>교수 연구실, 세미나실 등에는 강의시간표 편성 불가</li>
+  <li style="color:#c0392b;font-weight:700;">전공심화 과정: 전문학사와 강의실 중복 주의 → <strong>강의시간표편성오류리스트</strong> 확인</li>
+  <li>담당 교수 채용 전이라도 강의시간표 입력해야 학생 수강신청 가능 (입력기한 준수 여부 <strong>교수업적평가 반영</strong>)</li>
+  <li><strong>강의시간표와 다른 별도 시간표로 수업 운영 불가</strong>. 1~15주 동일, 타 강좌와 중복 불가</li>
+  <li>입력 완료 후 <strong>"작업저장"</strong></li>
+  </ul>
+  <div class="hr">🚨 제출한 시간표와 실제 강의 시간은 동일해야 함 (온라인 수업 예외)</div>
+  <div class="note">※ 강좌 폐지 시: 강의시간표관리에서 폐지된 수업의 강의실 반드시 삭제</div>
+  <div style="background:#fff3cd;border:2px solid #f5a623;border-left:6px solid #e8501a;border-radius:8px;padding:10px 14px;margin:6px 0;font-size:13px;font-weight:700;color:#1a3a6b;">🔔 ※ 오류 확인: 종합정보 → 수업 → 보고서(강좌관리) → <span style="color:#c0392b;text-decoration:underline;">강의시간표편성오류리스트</span></div>
+  <div class="note">※ 개강 후 교과목 담당교수 변경 〈서식17〉 및 강의시간표 변경 〈서식15〉: 업무연락에 타당한 사유 기재 후 첨부 제출</div>
+</div></div>
+
+<div class="sc"><div class="sth">📢 강의시간표 발표(홈페이지 공지)</div><div class="sb">
+  <div class="dlb"><div class="dd">📅 발표 시기</div><div class="dc"><strong>2026.8.3(월) 14:00 이후</strong> (7.24(금) 기준 입력자료로 공지 — 주의)</div></div>
+  <ul class="dl">
+  <li>강의시간표 발표 후 변경된 강의 시간은 홈페이지에 추가 공지 없음 (종합정보에서 직접 확인)</li>
+  <li><strong>학생 수강신청 기간 이후 강의시간표 변동은 원칙상 불가</strong></li>
+  <li>부득이하게 정정할 경우 수강 학생에게 영향 없는지 전수조사 후 진행</li>
+  </ul>
+  <div style="background:#fff3cd;border:2px solid #f5a623;border-left:6px solid #e8501a;border-radius:8px;padding:11px 15px;margin:8px 0;font-size:13px;font-weight:700;color:#1a3a6b;">🔔 ※ 개강 후 교과분담 및 강의실/강의시간표 변경 시 타당한 사유를 기재한 신청서를 업무연락으로 송부 <span style="color:#c0392b;">(타당한 사유가 아닌 경우 변경 불허)</span></div>
+</div></div>
+</div>
+
+<div class="tab" id="t7">
+<div class="ptt">④-1 교원시간표 자가점검 확인</div>
+  <style>
+/* ── 기본 리셋 ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#ck2 body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    font-size: 13px;
+    color: #1e2a38;
+    background: #fff;
+    line-height: 1.6;
+  }
+
+  /* ── 섹션 래퍼 ── */
+#ck2 .checklist-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
+  }
+
+  /* ── 섹션 제목 ── */
+#ck2 .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a3b6e;
+    border-left: 4px solid #1a3b6e;
+    padding-left: 10px;
+    margin-bottom: 14px;
+  }
+
+  /* ── 공지 박스 ── */
+#ck2 .notice-box {
+    background: #f0f4fa;
+    border: 1px solid #c5d3e8;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 22px;
+  }
+#ck2 .notice-box ul {
+    padding-left: 0;
+    list-style: none;
+  }
+#ck2 .notice-box ul li {
+    padding: 4px 0 4px 18px;
+    position: relative;
+    font-size: 12.5px;
+    color: #2c3e5a;
+    line-height: 1.8;
+  }
+#ck2 .notice-box ul li::before {
+    content: '※';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: #1a3b6e;
+    font-size: 11px;
+  }
+#ck2 .notice-box ul li strong {
+    color: #c0392b;
+  }
+  /* 배지가 포함된 li는 위아래 여백 추가 */
+#ck2 .notice-box ul li .badge {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+  }
+
+  /* ── 체크 항목 번호 배지 ── */
+#ck2 .items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+#ck2 .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #1a3b6e;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 9px;
+    font-size: 11.5px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+#ck2 .badge .num {
+    background: rgba(255,255,255,0.2);
+    border-radius: 3px;
+    padding: 0 4px;
+    font-size: 11px;
+  }
+
+  /* ── 상세 테이블 ── */
+#ck2 .detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-bottom: 28px;
+  }
+#ck2 .detail-table thead th {
+    background: #1a3b6e;
+    color: #fff;
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #1a3b6e;
+  }
+#ck2 .detail-table tbody tr:nth-child(even) {
+    background: #f7f9fc;
+  }
+#ck2 .detail-table tbody td {
+    padding: 7px 10px;
+    border: 1px solid #d0daea;
+    vertical-align: top;
+  }
+#ck2 .detail-table tbody td.no {
+    text-align: center;
+    font-weight: 700;
+    color: #1a3b6e;
+    white-space: nowrap;
+  }
+#ck2 .detail-table tbody td.category {
+    font-weight: 600;
+    white-space: nowrap;
+    color: #1a3b6e;
+  }
+
+  /* ── O/X 판정 표시 ── */
+#ck2 .judge {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+#ck2 .judge-o {
+    color: #27682a;
+    font-size: 12px;
+  }
+#ck2 .judge-x {
+    color: #c0392b;
+    font-size: 12px;
+  }
+#ck2 .judge-o::before { content: '[O] '; font-weight: 700; }
+#ck2 .judge-x::before { content: '[X] '; font-weight: 700; }
+
+  /* ── 사유서 제출 태그 ── */
+#ck2 .submit-tag {
+    display: inline-block;
+    margin-top: 5px;
+    background: #fdf0ef;
+    border: 1px solid #e8b4b0;
+    border-radius: 4px;
+    padding: 3px 7px;
+    font-size: 11.5px;
+    color: #922b21;
+  }
+#ck2 .submit-tag::before { content: '→ '; font-weight: 700; }
+
+  /* ── 직급별 수업시간 서브테이블 ── */
+#ck2 .sub-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 6px 0;
+  }
+#ck2 .sub-table th {
+    background: #dce7f5;
+    color: #1a3b6e;
+    padding: 4px 8px;
+    border: 1px solid #b6ccdf;
+    text-align: center;
+    font-weight: 600;
+  }
+#ck2 .sub-table td {
+    padding: 3px 8px;
+    border: 1px solid #cfdde8;
+    text-align: center;
+  }
+
+  /* ── 참고 박스 ── */
+#ck2 .ref-box {
+    background: #fffbf0;
+    border: 1px solid #e0c97a;
+    border-left: 4px solid #d4ac0d;
+    border-radius: 5px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 12.5px;
+  }
+#ck2 .ref-box .ref-title {
+    font-weight: 700;
+    color: #7d6608;
+    margin-bottom: 6px;
+  }
+#ck2 .ref-box ul {
+    padding-left: 16px;
+  }
+#ck2 .ref-box ul li { margin-bottom: 2px; }
+
+  /* ── 예외/비고 박스 ── */
+#ck2 .exception-box {
+    background: #f4fdf4;
+    border: 1px solid #a9d4a9;
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #1e4d1e;
+  }
+#ck2 .exception-box ul { padding-left: 16px; }
+#ck2 .exception-box ul li { margin-bottom: 2px; }
+
+  /* ── 예시표 ── */
+#ck2 .example-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+#ck2 .example-table th {
+    background: #2d5fa8;
+    color: #fff;
+    padding: 6px 8px;
+    border: 1px solid #1a3b6e;
+    text-align: center;
+    font-weight: 600;
+  }
+#ck2 .example-table td {
+    padding: 5px 8px;
+    border: 1px solid #c5d3e8;
+    text-align: center;
+    vertical-align: middle;
+  }
+#ck2 .example-table tr.group-head td {
+    background: #e8eef8;
+    font-weight: 700;
+    color: #1a3b6e;
+  }
+
+  /* ── 교시표 ── */
+#ck2 .timetable-wrap {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 8px 0;
+  }
+#ck2 .timetable-block { flex: 1; min-width: 200px; }
+#ck2 .timetable-block h5 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1a3b6e;
+    border-bottom: 2px solid #1a3b6e;
+    padding-bottom: 2px;
+  }
+#ck2 .timetable-block table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11.5px;
+  }
+#ck2 .timetable-block table th {
+    background: #dce7f5;
+    color: #1a3b6e;
+    padding: 3px 6px;
+    border: 1px solid #b6ccdf;
+    text-align: center;
+  }
+#ck2 .timetable-block table td {
+    padding: 3px 6px;
+    border: 1px solid #cfdde8;
+    text-align: center;
+  }
+
+  /* ── 시스템 경로 표시 ── */
+#ck2 .sys-path {
+    display: inline-block;
+    background: #f0f4fa;
+    border: 1px solid #b0c4de;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-size: 11.5px;
+    color: #1a3b6e;
+    font-family: monospace;
+  }
+
+  /* ── 작성방법 ── */
+#ck2 .method-box {
+    background: #1a3b6e;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+#ck2 .method-box .method-title { font-weight: 700; margin-bottom: 4px; }
+
+  /* ── 하단 ※ 단락 블록 ── */
+#ck2 .notice-paragraph {
+    margin-bottom: 22px;
+    padding: 0 4px;
+  }
+#ck2 .notice-paragraph p {
+    font-size: 13px;
+    color: #1e2a38;
+    line-height: 1.8;
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+  }
+
+  /* ── 굵은 시스템 경로 (빨간색 강조) ── */
+#ck2 .sys-path-bold {
+    font-weight: 700;
+    color: #c0392b;
+    font-size: 14px;
+  }
+
+  @media print {
+#ck2 body { font-size: 11px; }
+#ck2 .checklist-section { padding: 10px; }
+  }
+  </style>
+  <div id="ck2" style="padding:8px 4px;">
+<div class="checklist-section">
+
+  <!-- ■ 제목 -->
+  <div class="section-title">■ 교원 시간표 자가점검 체크리스트 안내</div>
+
+  <!-- ■ 주요 공지사항 (박스) -->
+  <div class="notice-box">
+    <ul>
+      <li><strong><span class="sys-path-bold">[종합정보 &gt; 수업 &gt; 보고서(교육과정) &gt; 교원시간표 자가점검]</span></strong>에서 확인(전공심화과정 편성과목 포함된 자료임)</li>
+      <li>교과분담 및 시간표 편성 후 수시로 확인하여 [X] 가 없도록 편성</li>
+      <li>[X] 표기의 항목별 명단은 <strong><span class="sys-path-bold">[종합정보 &gt; 수업 &gt; 보고서(교육과정) &gt; 교원시간표 자가점검 항목별 미준수 리스트]</span></strong>에서 확인</li>
+      <li>시간표 최종 확정 후, <strong style="color:#c0392b;">출력하여 학과장 서명 후 업무연락 제출</strong></li>
+    </ul>
+  </div>
+
+  <!-- ■ 12개 체크 항목 배지 -->
+  <div class="section-title">■ 체크 항목 (총 12개)</div>
+  <div class="items-grid">
+    <span class="badge"><span class="num">1</span> 교원 직급별 책임 수업시간</span>
+    <span class="badge"><span class="num">2</span> 교원 직급별 최대 수업시간</span>
+    <span class="badge"><span class="num">3</span> 1일 최대 수업시간</span>
+    <span class="badge"><span class="num">4</span> 연속강의 제한</span>
+    <span class="badge"><span class="num">5</span> 강의시간표 기준</span>
+    <span class="badge"><span class="num">6</span> 겸임교원 이론과목 담당</span>
+    <span class="badge"><span class="num">7</span> 전임교원 주당 수업일</span>
+    <span class="badge"><span class="num">8</span> 전임교원 교양과목 담당</span>
+    <span class="badge"><span class="num">9</span> 연구일 외 매주 4일 복무</span>
+    <span class="badge"><span class="num">10</span> 면담 가능시간 편성 및 게시</span>
+    <span class="badge"><span class="num">11</span> 동일교원이 동일전공의 동일학년-동일반 2개</span>
+    <span class="badge"><span class="num">12</span> 주중 학과별 전임교원 1인 상주 (권장)</span>
+  </div>
+
+  <!-- ■ 작성방법 -->
+
+  <!-- ■ 적용 범위 안내 -->
+  <div class="notice-box" style="margin-bottom:22px;">
+    <ul>
+      <li><strong>전임교원</strong> : 일반교원, 산학협력(중점)교원, 강의전담 및 외국인교원</li>
+      <li><strong>비전임교원</strong> : 겸임교수, 특임교수 등</li>
+      <li>1~5번 교원 전체 적용, 6번 겸임교원만 적용, 7~8번 전임교원만, 9·10·12번 일반교원·산학협력(중점)교원만 해당</li>
+      <li>복무규정, 수업운영에 관한 규정, 겸임교원 임용규정, 강사 인사 규정에 의거 반드시 준수</li>
+      <li><span class="badge" style="font-size:11px;padding:2px 7px;vertical-align:middle;margin-right:4px;"><span class="num">6</span> 겸임교원 이론과목 담당</span> 겸임교원 이론과목 담당할 경우 ✕ 표시 (이론교과목 담당 사유서 제출)</li>
+      <li><span class="badge" style="font-size:11px;padding:2px 7px;vertical-align:middle;margin-right:4px;"><span class="num">8</span> 전임교원 교양과목 담당</span> 전임교원 및 교양과목 담당할 경우 ○ 표시</li>
+      <li><span class="badge" style="font-size:11px;padding:2px 7px;vertical-align:middle;margin-right:4px;"><span class="num">9</span> 연구일 외 매주 4일 복무</span> 수업일 및 면담일 제외된 요일 표기</li>
+      <li><span class="badge" style="font-size:11px;padding:2px 7px;vertical-align:middle;margin-right:4px;"><span class="num">12</span> 주중 학과별 전임교원 1인 상주</span> 주중 학과별 전임교원 1인 상주 항목은 개인별 체크 ✕, 학과 준수 시 ○</li>
+      <li>* 퇴직교원 교과분담 배정여부 별도 확인</li>
+    </ul>
+  </div>
+
+  <!-- ■ 담당시수·인정시수·책임시수·최대시수 용어 설명 -->
+  <div class="section-title">■ 시수 구분 용어 설명</div>
+  <table class="detail-table" style="margin-bottom:22px;">
+    <colgroup>
+      <col style="width:110px">
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>내용</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="category">담당시수</td>
+        <td>교원이 맡은 모든 과목의 시수<br>
+          <span style="font-size:11.5px;color:#555;">(단, 강사료 예외강좌 제외 : OJT, 학점인정강좌, 현장실습, 팀티칭강좌, 스텝바이스텝)</span></td>
+      </tr>
+      <tr>
+        <td class="category">인정시수</td>
+        <td>교원이 맡은 모든 과목 중 책임수업시간 미포함 과목 제외 시수<br>
+          <span style="font-size:11.5px;color:#555;">(책임수업시간 미포함 강좌 : 취창업멘토링, 캡스톤디자인, e-러닝, TRUST대학생활적응, 스텝바이스텝, 강사료예외 강좌)</span></td>
+      </tr>
+      <tr>
+        <td class="category">책임시수</td>
+        <td>복무규정에 기재되어 있는 직급별 책임/기준 수업시간</td>
+      </tr>
+      <tr>
+        <td class="category">최대시수</td>
+        <td>복무규정에 기재되어 있는 직급별 한계/최대 수업시간</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ■ 세부 체크 항목별 기준 -->
+  <div class="section-title">■ 교원 시간표(강의시간, 교과분담) 세부 사항</div>
+
+  <table class="detail-table">
+    <colgroup>
+      <col style="width:36px">
+      <col style="width:110px">
+      <col style="width:34%">
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>구분</th>
+        <th>기준 및 내용</th>
+        <th>준수 판정 및 조치</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- 1번 -->
+      <tr>
+        <td class="no">1</td>
+        <td class="category">교원 직급별<br>책임/기준<br>수업시간</td>
+        <td>
+          <table class="sub-table">
+            <thead>
+              <tr><th>교원 구분</th><th>책임/기준 수업시간</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>교무위원</td><td>0</td></tr>
+              <tr><td>기타보직교원</td><td>6</td></tr>
+              <tr><td>일반교원</td><td>9</td></tr>
+              <tr><td>산학협력(중점)교원</td><td>6</td></tr>
+              <tr><td>강의전담교원</td><td>9</td></tr>
+              <tr><td>외국인교원</td><td>9</td></tr>
+              <tr><td>특임교수</td><td>0~6</td></tr>
+              <tr><td>겸임교원</td><td>2~9</td></tr>
+              <tr><td>초빙교수</td><td>0~6</td></tr>
+              <tr><td>강사</td><td>0~6</td></tr>
+            </tbody>
+          </table>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 복무규정 제21조(연구일과 책임수업시간), 제22조(교원의 한계수업시간), 겸임교원 임용규정 제7조(임무), 강사 인사 규정 제16조(교수시간)</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">인정시수가 책임시수 이상인 경우</span>
+            <span class="judge-x">인정시수가 책임시수 미달인 경우</span>
+          </div>
+          <div class="submit-tag">「수업진행관련서식」 &lt;서식9&gt; 전임교원 책임수업시간 미달 사유서 제출</div>
+        </td>
+      </tr>
+
+      <!-- 2번 -->
+      <tr>
+        <td class="no">2</td>
+        <td class="category">교원 직급별<br>한계/최대<br>수업시간</td>
+        <td>
+          <table class="sub-table">
+            <thead>
+              <tr><th>교원 구분</th><th>한계/최대 수업시간</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>교무위원</td><td>6</td></tr>
+              <tr><td>기타보직교원</td><td>16</td></tr>
+              <tr><td>일반교원</td><td>24</td></tr>
+              <tr><td>산학협력(중점)교원</td><td>15</td></tr>
+              <tr><td>강의전담교원</td><td>24</td></tr>
+              <tr><td>외국인교원</td><td>24</td></tr>
+              <tr><td>특임교수</td><td>9</td></tr>
+              <tr><td>겸임교원</td><td>12</td></tr>
+              <tr><td>초빙교수</td><td>12</td></tr>
+              <tr><td>강사</td><td>9</td></tr>
+            </tbody>
+          </table>
+          <div style="font-size:11px;color:#922b21;margin-top:5px;">※ 강사, 겸임교원은 한계수업시간을 초과할 수 없음</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">담당시수가 최대시수 이내인 경우</span>
+            <span class="judge-x">담당시수가 최대시수를 초과한 경우</span>
+          </div>
+          <div class="submit-tag">전임교원 : 「수업진행관련서식」 &lt;서식10&gt; 전임교원 한계수업시간 초과 확인서 제출</div>
+          <div class="submit-tag">비전임·강사 : &lt;서식14&gt; 비전임교원 및 강사 기준시수 초과 사유서 제출</div>
+        </td>
+      </tr>
+
+      <!-- 3번 -->
+      <tr>
+        <td class="no">3</td>
+        <td class="category">1일 최대<br>수업시간</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>교원의 1일 최대 수업시간은 <strong>6시간 이내</strong></li>
+            <li>비전임 교원 및 강사는 야간강의 포함 시 <strong>9시간 이내</strong></li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 복무규정 제22조, 수업운영에 관한 규정 제6조<br>
+          * 기준 : 강의시간표 (e러닝, 취창업멘토링, 강사료제외과목 미포함)</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">6시간 이내 (비전임·강사 야간 포함 시 9시간 이내)</span>
+            <span class="judge-x">기준 초과</span>
+          </div>
+          <div class="submit-tag">「수업진행관련서식」 &lt;서식11&gt; 1일 최대 수업시간 초과 시간표 편성 사유서 제출</div>
+        </td>
+      </tr>
+
+      <!-- 4번 -->
+      <tr>
+        <td class="no">4</td>
+        <td class="category">연속강의<br>제한</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>연속 <strong>4시간 초과</strong>하여 강의 시간 배정 불가</li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 수업운영에 관한 규정 제6조</div>
+          <div style="font-size:11.5px;font-weight:700;color:#c0392b;background:#fff3cd;border:1.5px solid #e8501a;border-radius:4px;padding:4px 7px;margin-top:5px;">* 기준 : 강의시간표 (e러닝, 강사료제외과목 미포함, 취창업멘토링 포함)</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">연속강의 4시간까지</span>
+            <span class="judge-x">연속강의 4시간 초과</span>
+          </div>
+          <div class="submit-tag">「수업진행관련서식」 &lt;서식12&gt; 연속강의 제한 초과 시간표 편성 사유서 제출</div>
+        </td>
+      </tr>
+
+      <!-- 5번 -->
+      <tr>
+        <td class="no">5</td>
+        <td class="category">강의시간표<br>기준 준수</td>
+        <td>
+          <div style="font-size:12px;margin-bottom:6px;">강의시간표 편성 기준 (월~금) : 주간 1~9교시 / 야간 10~15교시 (전공심화 야간과정)</div>
+          <div class="timetable-wrap">
+            <div class="timetable-block">
+              <h5>주간</h5>
+              <table>
+                <thead><tr><th>교시</th><th>시간</th></tr></thead>
+                <tbody>
+                  <tr><td>1교시</td><td>09:00 ~ 09:50</td></tr>
+                  <tr><td>2교시</td><td>10:00 ~ 10:50</td></tr>
+                  <tr><td>3교시</td><td>11:00 ~ 11:50</td></tr>
+                  <tr><td>4교시</td><td>12:00 ~ 12:50</td></tr>
+                  <tr><td>5교시</td><td>13:00 ~ 13:50</td></tr>
+                  <tr><td>6교시</td><td>14:00 ~ 14:50</td></tr>
+                  <tr><td>7교시</td><td>15:00 ~ 15:50</td></tr>
+                  <tr><td>8교시</td><td>16:00 ~ 16:50</td></tr>
+                  <tr><td>9교시</td><td>17:00 ~ 17:50</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="timetable-block">
+              <h5>야간</h5>
+              <table>
+                <thead><tr><th>교시</th><th>시간</th></tr></thead>
+                <tbody>
+                  <tr><td>10교시</td><td>18:00 ~ 18:45</td></tr>
+                  <tr><td>11교시</td><td>18:50 ~ 19:35</td></tr>
+                  <tr><td>12교시</td><td>19:40 ~ 20:25</td></tr>
+                  <tr><td>13교시</td><td>20:30 ~ 21:15</td></tr>
+                  <tr><td>14교시</td><td>21:20 ~ 22:05</td></tr>
+                  <tr><td>15교시</td><td>22:10 ~ 22:55</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 수업운영에 관한 규정 제6조<br>
+          * 기준 : 강의시간표 (e러닝, 강사료제외과목 미포함)</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">교육과정 "주간" 강좌 → 주중 1~9교시 / "야간" 강좌 → 주중 10~15교시</span>
+            <span class="judge-x">교육과정 "주간" 강좌 → 10~15교시 배정 / "야간" 강좌 → 1~9교시 배정 / 주말 강의인 경우</span>
+          </div>
+          <div class="submit-tag">「수업진행관련서식」 &lt;서식16&gt; 강의시간표 기준교시 초과 편성 강좌 사유서 제출</div>
+        </td>
+      </tr>
+
+      <!-- 6번 -->
+      <tr>
+        <td class="no">6</td>
+        <td class="category">겸임교원<br>이론과목<br>담당</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>겸임교원 임용 자격 기준 : 순수 학술 이론 과목이 아닌 <strong>실무·실험·실기 등 현장실무 경험을 필요로 하는 교과</strong>를 담당해야 함</li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 겸임교원 임용규정 제3조(자격)<br>
+          * 기준 : 개설강좌의 강의유형에 "이론"을 담당하는 비전임교원 (겸임만 적용)</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">강의유형 "실습"을 담당하는 비전임교원</span>
+            <span class="judge-x">강의유형이 "이론"인 과목을 1개 이상 담당하는 비전임교원</span>
+          </div>
+          <div class="submit-tag">「수업진행관련서식」 &lt;서식6&gt; 겸임교원 이론 교과목 담당 사유서 제출</div>
+        </td>
+      </tr>
+
+      <!-- 7번 -->
+      <tr>
+        <td class="no">7</td>
+        <td class="category">전임교원<br>주당 수업일</td>
+        <td>
+          <table class="sub-table">
+            <thead>
+              <tr><th>수업일</th><th>해당 직급</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2일 이상</td><td>교무위원을 제외한 보직교원</td></tr>
+              <tr><td>3일 이상</td><td>보직교원을 제외한 평교원</td></tr>
+            </tbody>
+          </table>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 복무규정 제21조<br>
+          ※ 전임교원(일반교원 + 산학협력(중점) + 외국인, 강의전담) 적용<br>
+          * 기준 : 강의시간표 (e러닝, 강사료제외과목 미포함)<br>
+          - 교무위원(부총장, 처장, 산단장) : 0일 이상 / 보직교원(교무위원 제외) : 2일 이상 / 평교원 : 3일 이상</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">기준을 충족하는 경우</span>
+            <span class="judge-x">기준 미충족</span>
+          </div>
+          <div class="submit-tag">복무규정 위반으로 시간표 조정 필요</div>
+          <div style="font-size:11.5px;color:#6d28d9;font-weight:600;margin-top:6px;">※ 책임수업시간 6시간 이하인 전임교원(평교원)에 한하여 수업일에 제한 없음(단, 교무위원을 제외한 보직교원은 2일 이상임)(규정 개정 중)</div>
+        </td>
+      </tr>
+
+      <!-- 8번 -->
+      <tr>
+        <td class="no">8</td>
+        <td class="category">전임교원<br>교양과목<br>담당</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>전임교원이 교양과목을 담당하고자 하는 경우 <strong>직전학기 담당 교과목 전체 강의평가 점수 평균이 3.70점 이상</strong>이어야 함</li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 수업운영에 관한 규정 제4조(강좌개설 및 교과분담)<br>
+          ※ 전임교원(일반교원 + 산학협력(중점) + 외국인, 강의전담) 적용<br>
+          * 기준 : 교양과목을 담당하는 전임교원 / 직전학기 담당교과목 전체 기말 강의평가 점수 3.7(F포함) 이상</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">기준을 충족하는 경우</span>
+            <span class="judge-x">교양과목 담당 전임교원 중 직전학기 강의평가 점수가 3.7 이하 혹은 없는 경우</span>
+          </div>
+          <div class="submit-tag">기초융합교육원 문의</div>
+        </td>
+      </tr>
+
+      <!-- 9번 -->
+      <tr>
+        <td class="no">9</td>
+        <td class="category">4일 출근여부<br>(연구일 외<br>매주 4일 복무)</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>교원의 연구일은 <strong>매주 1일</strong></li>
+            <li>강의일과 면담 시간 배정을 통해 <strong>주당 4일 교내 상주 근무</strong></li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 복무규정 제21조<br>
+          ※ 일반교원, 산학협력(중점)교원만 적용<br>
+          * 기준 : 강의시간표 및 면담시간표 / 연구일 1일 표기(수업 및 면담시간 제외일)<br>
+          ※ 9번은 총장 승인을 받아 교무위원은 제외로 할 수 있음</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">강의일 + 면담일 합산 주 4일 이상</span>
+            <span class="judge-x">일반교원, 산학협력(중점)교원 중 2일 이상 요일이 표기된 경우</span>
+          </div>
+          <div class="submit-tag">복무규정 위반으로 시간표 조정 필요 (단, 주말에 수업이 있는 경우 예외)</div>
+        </td>
+      </tr>
+
+      <!-- 10번 -->
+      <tr>
+        <td class="no">10</td>
+        <td class="category">면담<br>가능시간<br>편성</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>전임교원은 <strong>주당 3시간 이상</strong>의 면담가능시간을 정하여 공지 (종합정보시스템 입력)</li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 수업운영에 관한 규정 제6조<br>
+          ※ 일반교원, 산학협력(중점)교원만 적용<br>
+          * 기준 : <span class="sys-path">종합정보 &gt; 수업 &gt; 강좌관리 &gt; 면담시간표관리</span></div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">면담시간표 관리에 3시간 이상 입력한 경우</span>
+            <span class="judge-x">면담시간표 관리에 3시간 이하 입력한 경우</span>
+          </div>
+          <div class="submit-tag">수업운영에 관한 규정 위반 → 면담시간표관리에서 3시간 이상 입력</div>
+        </td>
+      </tr>
+
+      <!-- 11번 -->
+      <tr>
+        <td class="no">11</td>
+        <td class="category">동일학년-반<br>2개 강좌까지<br>담당</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>동일교원이 동일전공의 동일학년-동일반을 <strong>2개 강좌까지만 담당 가능</strong></li>
+            <li>단, 신설학과 또는 부득이한 경우 총장의 승인을 얻어 담당 가능 (사유서 제출)</li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">관련규정 : 수업 운영 시행 지침 제2조(책무)<br>
+          * 기준 : 교과분담표 (책임시수 미포함과목 제외)</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">동일전공의 동일학년-반 2개까지 담당</span>
+            <span class="judge-x">동일전공의 동일학년-반 3개 이상 담당</span>
+          </div>
+          <div class="submit-tag">「수업진행관련서식」 &lt;서식18&gt; 동일교원 동일전공의 동일학년·동일반 초과 담당 사유서 제출</div>
+        </td>
+      </tr>
+
+      <!-- 12번 -->
+      <tr>
+        <td class="no">12</td>
+        <td class="category">주중 학과별<br>전임교원<br>1인 상주<br>(권장)</td>
+        <td>
+          <ul style="padding-left:14px;font-size:12.5px;">
+            <li>요일별 학과별 전임교원 1인 이상 강의 배정 <strong>권장</strong></li>
+            <li>학생 상담 및 민원, 행정처리(휴학, 자퇴 등)를 위함</li>
+          </ul>
+          <div style="font-size:11px;color:#555;margin-top:5px;">※ 일반교원, 산학협력(중점)교원만 적용<br>
+          ※ 12번은 학과단위로 적용하되, 일반교원 및 산학협력(중점)교원이 1인인 학과는 예외<br>
+          * 주중 학과별 전임교원 1인 상주 시 "○" 직접 표기 (개인별 표기 아님)</div>
+        </td>
+        <td>
+          <div class="judge">
+            <span class="judge-o">학과 단위로 요일별 전임교원 1인 이상 배정된 경우</span>
+            <span class="judge-x">미충족 시 (권장사항이므로 개인별 체크 ✕, 학과 준수 시 ○)</span>
+          </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- ■ 참고: 책임수업시간 제외과목 -->
+  <div class="ref-box">
+    <div class="ref-title">참고 · 전임교원 책임수업시간 미포함 과목 담당 교원</div>
+    <ul>
+      <li>책임수업시간 미포함 과목 : <strong>취·창업멘토링, 캡스톤디자인, e-러닝, 팀티칭, 스텝바이스텝</strong></li>
+      <li>책임시수는 일반과목으로 담당하고, 위 교과목은 <strong>추가 강의</strong>로 담당</li>
+    </ul>
+    <div style="font-size:11px;color:#7d6608;margin-top:6px;">관련규정 : 수업운영에 관한 규정 제4조(강좌개설 및 교과분담)</div>
+  </div>
+
+</div><!-- /checklist-section -->
+  </div>
+</div>
+
+<div class="tab" id="t4">
+<div class="ptt">⑤ 강의계획서 및 수업설계 입력</div>
+
+<div class="sc"><div class="sth">📄 강의계획서 및 수업설계 입력 〈서식 8, 9〉 <span class="badge br" style="margin-left:6px">학사운영투명성지수 반영</span></div><div class="sb">
+  <div class="sub">가. 입력 기간</div>
+  <div class="dlb"><div class="dd">📅 입력 기간</div><div class="dc"><strong>2026.7.20(월) 15:00 ~ 7.23(목) 14:00</strong> <span class="badge br">기한 엄수</span><br>(수강신청 8.10(월) 10:00부터 시작 → 반드시 기한 내 입력 완료)</div></div>
+  <div class="sub">나. 입력 방법</div>
+  <p>종합정보시스템 및 역량기반 교육시스템에서 <strong>담당 교수가 직접 입력</strong></p>
+  <ul class="dl">
+  <li>평가 방법(비중), 강의 일정 및 과제, 고사 기간, 교수학습 방법, 교육 장소, 주교재, 평가 방법 등 정확히 기재</li>
+  <li>성적평가는 성적평가 시행세칙의 <strong>평가 방법별 비중 준수</strong></li>
+  </ul>
+  <div class="sub">성적 등급표</div>
+  <table><tr><th>등급</th><th>배점</th><th>평점</th><th>등급</th><th>배점</th><th>평점</th></tr>
+  <tr><td>A+</td><td>100~95</td><td>4.5</td><td>A0</td><td>94~90</td><td>4.0</td></tr>
+  <tr><td>B+</td><td>89~85</td><td>3.5</td><td>B0</td><td>84~80</td><td>3.0</td></tr>
+  <tr><td>C+</td><td>79~75</td><td>2.5</td><td>C0</td><td>74~70</td><td>2.0</td></tr>
+  <tr><td>D+</td><td>69~65</td><td>1.5</td><td>D0</td><td>64~60</td><td>1.0</td></tr>
+  <tr><td>F</td><td>59 이하</td><td>0.0</td><td>P/NP</td><td>100~60/59이하</td><td>불계</td></tr>
+  </table>
+  <div class="hy">⚠️ 역량기반 교과목 및 NCS/YCS 교과목: <strong>A학점 비율 40% 초과 학생의 성적은 B+(89점)로 자동 부여</strong></div>
+  <div class="sub">다. 수업설계 — 역량기반 교육과정 교과목 (문의 ☏ 315)</div>
+  <div class="note"><b>경로:</b> 역량기반 교육시스템 &gt; 교육과정운영 &gt; 수업설계 &gt; 강좌별 선택</div>
+  <table><tr><th colspan="2">입력 부문</th><th>입력자</th><th>주요 내용</th></tr>
+  <tr><td rowspan="4">수업설계</td><td>강의계획서</td><td rowspan="4" style="text-align:center">담당교수</td><td>수강신청 기간 이전까지 작성 원칙</td></tr>
+  <tr><td>평가계획서</td><td>출석 20%(고정), 역량평가 + 재평가가점 80%</td></tr>
+  <tr><td>진단평가 문항관리</td><td>학기 초 학습자 자가진단평가 문항 관리</td></tr>
+  <tr><td>역량평가 내용관리</td><td>역량평가 차수별로 평가할 하위역량/능력단위요소 선택</td></tr>
+  </table>
+  <div class="note">※ 취창업멘토링 과목과 관련하여 추후 별도 안내 예정</div>
+  <div class="sub">라. 종합정보시스템 강의계획서 — 역량기반 외 교과목</div>
+  <div class="note"><b>경로:</b> 종합정보시스템 &gt; 수업 &gt; 강좌관리 &gt; 강의계획서관리</div>
+  <div class="sub">마. 유의사항</div>
+  <ul class="dl">
+  <li>교과분담표에 담당 교수를 입력해야 강의계획서 입력 가능</li>
+  <li>신규 강사: 교과분담표 입력 시 [계속강사일괄추천]-[마감 제출] 버튼을 눌러야 강의계획서 입력 가능</li>
+  <li>강사 발령 전 포털시스템 로그인 및 강의계획서 입력 문의: ☏ 321 (전자출결시스템은 발령 후 가능)</li>
+  <li>강의교재 입력 시 교재명·저자·출판사·출판연도 등 <strong>정확히 기재</strong></li>
+  <li>전공심화, 현장실습, P-TECH, 일학습병행 교과목 강의계획서는 <strong>종합정보시스템에 입력</strong></li>
+  </ul>
+  <div class="rb"><div class="rt">📜 일반교원 업적평가 시행세칙 — 학사운영투명성지수</div>
+  학사운영투명성지수를 1학기(8월)와 1학기(2월)에 각각 산출, 그 결과의 평균값을 반영<br><br>
+  <table style="table-layout:auto;width:100%;">
+  <tr>
+    <th style="min-width:110px;">항목</th>
+    <th>세부항목</th>
+    <th style="min-width:80px;white-space:nowrap;">기준</th>
+    <th style="width:50px;">배점</th>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;" rowspan="2">수업운영계획의 투명성</td>
+    <td style="white-space:nowrap;">교과분담표 입력기간 준수</td>
+    <td style="white-space:nowrap;">교무처 지정기간</td>
+    <td style="text-align:center;">15</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">강의시간표 입력기간 준수</td>
+    <td style="white-space:nowrap;">교무처 지정기간</td>
+    <td style="text-align:center;">15</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">강좌정보 공개의 투명성</td>
+    <td style="word-break:keep-all;">강의계획서·수업설계 입력기간 준수<br>(강의계획서, 평가계획서, 진단평가문항관리, 직무수행능력평가 내용관리)</td>
+    <td style="white-space:nowrap;">교무처 지정기간</td>
+    <td style="text-align:center;">15</td>
+  </tr>
+  </table></div>
+</div></div>
+</div>
+
+<div class="tab" id="t5">
+<div class="ptt">⑥ 수강신청</div>
+
+<div class="sc"><div class="sth">📚 수강신청 일정</div><div class="sb">
+  <div class="sub">가. 수강신청 기간</div>
+  <table style="table-layout:auto;width:100%;border-collapse:collapse;">
+  <tr>
+    <th style="width:22%;min-width:140px;">내용</th>
+    <th style="width:30%;min-width:200px;">일정</th>
+    <th style="width:48%;">비고</th>
+  </tr>
+  <tr>
+    <td style="word-break:keep-all;white-space:nowrap;">장애학생 수강신청</td>
+    <td style="word-break:keep-all;white-space:nowrap;"><strong>2026.8.10(월) 10:00~16:00</strong></td>
+    <td style="word-break:keep-all;word-wrap:break-word;">종합정보시스템 사용 불가 → 이메일/전화 → 소속학과 요청 → 교무처 제출 (학생복지팀 내 정보로 장애학생 확인 필요)</td>
+  </tr>
+  <tr>
+    <td style="word-break:keep-all;white-space:nowrap;">2·3학년 수강신청</td>
+    <td style="word-break:keep-all;white-space:nowrap;"><strong>2026.8.11(화) 10:00 ~ 8.12(수) 16:00</strong></td>
+    <td style="word-break:keep-all;word-wrap:break-word;">재학생, 복학생, 조기복학생, 재입학생, 전공심화 2학년 포함</td>
+  </tr>
+  <tr>
+    <td style="word-break:keep-all;white-space:nowrap;">1학년 수강신청</td>
+    <td style="word-break:keep-all;white-space:nowrap;"><strong>2026.8.13(목) 10:00 ~ 23:59, 8.18(화) 10:00 ~ 16:00</strong></td>
+    <td style="word-break:keep-all;word-wrap:break-word;">재학생, 복학생, 조기복학생, 재입학생, 전공심화 1학년 포함</td>
+  </tr>
+  <tr>
+    <td style="word-break:keep-all;white-space:nowrap;">전학년 수강신청</td>
+    <td style="word-break:keep-all;white-space:nowrap;"><strong>2026.8.19(수) 10:00~16:00</strong></td>
+    <td style="word-break:keep-all;word-wrap:break-word;">모든 학년 수강 가능, 타학과 교과목 수강신청 및 정정 가능</td>
+  </tr>
+  <tr>
+    <td style="word-break:keep-all;white-space:nowrap;">학생 수강신청 정정기간</td>
+    <td style="word-break:keep-all;white-space:nowrap;"><strong>8.24(월) 10:00 ~ 8.26(수) 18:00</strong> (3일)</td>
+    <td style="word-break:keep-all;word-wrap:break-word;">학생이 직접 수강 정정</td>
+  </tr>
+  <tr>
+    <td style="word-break:keep-all;white-space:nowrap;">학과 수강신청 정정기간</td>
+    <td style="word-break:keep-all;white-space:nowrap;"><strong>8.27(목) 10:00 ~ 8.28(금) 18:00</strong> (2일)</td>
+    <td style="word-break:keep-all;word-wrap:break-word;">수강오류자 및 미수강자 등 학생이 직접 못하는 경우에 한함 (학생 개인사정에 의한 수강정정 불가)</td>
+  </tr>
+  </table>
+  <div class="note">※ 복학생, 재입학생은 학년에 맞게 수강신청 날짜 확인하여 신청</div>
+  <div class="sub">나. 수강신청 유의사항</div>
+  <ul class="dl">
+  <li><strong>학생이 모든 과목을 직접 수강신청</strong> (1학년 포함)</li>
+  <li>수강신청 완료 후 본인이 직접 수강신청 내역 확인하도록 지도 (기관평가인증 지표)</li>
+  <li>수강신청 및 정정기간에 지도교수 및 학과장 상담을 통하여 미신청·전필 누락 등 오류자 지도</li>
+  <li>타학과 전공 수업은 학생 본인이 직접 수강신청 가능 (전학년 수강신청 기간)</li>
+  <li>타 그룹 개설 교양과목 학생 직접 수강신청 가능 (학년·그룹 상관없이)</li>
+  </ul>
+  <div class="hy">⚠️ 학과 임의정정 지양 (학생 민원 다수 발생)</div>
+  <div class="sub">다. 수강신청 정정</div>
+  <ul class="dl">
+  <li>학생 정정: <strong>8.24(월) 10:00 ~ 8.26(수) 18:00</strong> (3일간, 학생이 직접)</li>
+  <li>학과 정정: <strong>8.27(목) 10:00 ~ 8.28(금) 18:00</strong> (2일간) — 수강오류, 폐강 예정 과목, 타학년·타분반(학생이 직접 수강하지 못하는 경우에 한함. 학생 개인 사유 불가)</li>
+  <li>수강신청 정정기간에 정정하여 2주차부터 참석한 경우 1주차는 결석처리 → 신중하게 지도</li>
+  </ul>
+  <div class="sub">라. 수강신청 지도</div>
+  <div class="note">수강신청 지도 기간, 지도 체계, 학년별 지도 내용은 아래 섹션 참조</div>
+</div></div>
+
+<div class="sc"><div class="sth">🎓 수강신청 지도</div><div class="sb">
+  <div class="sub">가. 수강신청 지도 기간</div>
+  <div class="ig">
+  <div class="ic"><div class="il">1차 수강지도 기간</div><div class="iv">8.3(월) ~ 8.6(목)</div></div>
+  <div class="ic"><div class="il">수강신청 오류자 점검 기간</div><div class="iv">8.10(목) ~ 8.28(금)</div></div>
+  </div>
+  <div class="sub">나. 수강신청 지도 체계</div>
+  <div style="border:1.5px solid #c0cce0;border-radius:10px;padding:20px 16px 16px;margin:10px 0;background:#fafbfd;">
+    <div style="display:flex;align-items:stretch;gap:0;flex-wrap:wrap;justify-content:center;">
+
+      <div style="display:flex;flex-direction:column;min-width:130px;max-width:160px;flex:1;">
+        <div style="background:#d8b4fe;border:1.5px solid #a855f7;border-radius:7px 7px 0 0;padding:8px 10px;text-align:center;font-size:12.5px;font-weight:700;color:#4c1d95;">
+          1차 수강지도<br><span style="font-size:11.5px;font-weight:600;">8.3(월) ~ 8.6(목)</span>
+        </div>
+        <div style="background:#f3e8ff;border:1.5px solid #a855f7;border-top:none;border-radius:0 0 7px 7px;padding:10px;text-align:center;font-size:12px;color:#4c1d95;flex:1;display:flex;align-items:center;justify-content:center;">
+          전공필수 등 수강지도
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;padding:0 6px;font-size:20px;color:#64748b;align-self:center;">→</div>
+
+      <div style="display:flex;flex-direction:column;min-width:130px;max-width:160px;flex:1;">
+        <div style="background:#e2e8f0;border:1.5px solid #94a3b8;border-radius:7px 7px 0 0;padding:8px 10px;text-align:center;font-size:12.5px;font-weight:700;color:#1e293b;">
+          본 수강신청
+        </div>
+        <div style="background:#f8fafc;border:1.5px solid #94a3b8;border-top:none;border-radius:0 0 7px 7px;padding:10px;text-align:center;font-size:12px;color:#334155;flex:1;display:flex;align-items:center;justify-content:center;">
+          교과목 및 개방복합 등<br>학생 직접 신청
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;padding:0 6px;font-size:20px;color:#64748b;align-self:center;">→</div>
+
+      <div style="display:flex;flex-direction:column;min-width:130px;max-width:160px;flex:1;">
+        <div style="background:#d8b4fe;border:1.5px solid #a855f7;border-radius:7px 7px 0 0;padding:8px 10px;text-align:center;font-size:12.5px;font-weight:700;color:#4c1d95;">
+          2차 수강지도<br><span style="font-size:11.5px;font-weight:600;">8.10(월) ~ 8.28(금)</span>
+        </div>
+        <div style="background:#f3e8ff;border:1.5px solid #a855f7;border-top:none;border-radius:0 0 7px 7px;padding:10px;text-align:center;font-size:12px;flex:1;display:flex;align-items:center;justify-content:center;">
+          <span style="color:#c0392b;font-weight:700;">미신청 및 오류자<br>지도하여 정정(학과)</span>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;padding:0 6px;font-size:20px;color:#64748b;align-self:center;">→</div>
+
+      <div style="display:flex;flex-direction:column;min-width:130px;max-width:160px;flex:1;">
+        <div style="background:#e2e8f0;border:1.5px solid #94a3b8;border-radius:7px 7px 0 0;padding:8px 10px;text-align:center;font-size:12.5px;font-weight:700;color:#1e293b;">
+          수강신청 확인
+        </div>
+        <div style="background:#f8fafc;border:1.5px solid #94a3b8;border-top:none;border-radius:0 0 7px 7px;padding:10px;text-align:center;font-size:12px;color:#334155;flex:1;display:flex;align-items:center;justify-content:center;">
+          수강신청 및 정정<br>확인(학생)
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:14px;font-size:12.5px;color:#64748b;font-weight:600;">〈 수강신청 지도 체계 〉</div>
+  </div>
+  <div class="sub">다. 학년별 지도 내용</div>
+  <table><tr><th>구분</th><th>지도 내용</th></tr>
+  <tr><td>1학년</td><td>강의시간표 / 필수과목: <strong>취창업멘토링(2)(전필)</strong> / 영어필수: 기초융합교육원 지정 영어교양 교과목 중 <strong>2학점 이상</strong></td></tr>
+  <tr><td>2학년</td><td>필수과목: <strong>취창업멘토링(4)(전필)</strong>, <strong>직장예절(교필)</strong></td></tr>
+  <tr><td>3학년</td><td>필수과목: <strong>취창업멘토링(6)(전필)</strong> / 졸업기준 학점 안내</td></tr>
+  <tr><td>전과생·복학생·유급생 등</td><td>학생 교육과정년도에 맞추어 상담 / 학년에 맞추어 필수과목 안내</td></tr>
+  <tr><td>폐지학과</td><td>산업안전전공, 컴퓨터정보통신전공, IT비즈니스전공, 아동보육전공 3학년 교육과정 존재 → 전공지도 / 그 외: 전과 혹은 자기설계융합전공 신청 등 상담 후 지도</td></tr>
+  <tr><td>공통</td><td><strong>최소 15학점 ~ 최대 21학점</strong>까지 수강신청<br>※ 조기복학생·유급생 제외 모든 재학생은 최소 15학점 이상 수강 필수<br>※ 재수강·전과·재입학·편입학·융합전공·복수전공 학생: <strong>24학점</strong>까지 신청 가능</td></tr>
+  </table>
+  <div class="rb"><div class="rt">📜 학칙 제23조(교과이수 단위)</div>
+  학생은 매 학기 15학점 이상 21학점(재수강·전과·재입학·편입학·융합전공·복수전공 학생은 24학점) 이하로 수강신청하여 학점을 이수해야 함을 원칙으로 한다.</div>
+  <div style="background:#fff3cd;border:2px solid #f5a623;border-left:6px solid #e8501a;border-radius:8px;padding:11px 15px;margin:8px 0;font-size:13px;font-weight:700;color:#1a3a6b;">📌 수강신청 지도: 종합정보 &gt; 수강 &gt; 보고서 &gt; <span style="color:#c0392b;text-decoration:underline;">수강신청졸업예상확인(학생)</span> 참고 <span style="font-size:12px;color:#7a5200;">(* 2026-2학기 수강신청 실시 후 활용 가능)</span></div>
+  <div class="note">수강오류자 점검: 종합정보 &gt; 수강 &gt; <b>수강오류자리스트</b> — 수시로 확인하여 수강오류 학생 발생하지 않도록 유의</div>
+
+  <div class="sc" style="margin-top:12px;">
+  <div class="sth">📋 수강오류자리스트 항목별 설명</div>
+  <div class="sb">
+  <table style="table-layout:auto;width:100%;">
+  <tr><th style="width:36px;">번호</th><th style="width:28%;">항 목</th><th>항 목 설 명</th></tr>
+  <tr><td style="text-align:center;">1</td><td>수강신청자 중 미복학자</td><td>수강신청하였으나 복학 신청(승인)하지 않은 자</td></tr>
+  <tr><td style="text-align:center;">2</td><td>수강신청자 중 미등록자</td><td>수강신청하였으나 등록하지 않은 자 &nbsp;※ 등록기간 이후 확인</td></tr>
+  <tr><td style="text-align:center;">3</td><td>복학자 중 미수강신청자</td><td>복학 신청했으나 수강신청 하지 않은 자(조기 복학/유급 복학 포함)</td></tr>
+  <tr style="background:#fff9c4!important;">
+    <td style="text-align:center;font-weight:700;">4</td>
+    <td style="font-weight:700;color:#c0392b;">학점 초과 및 재수강 오류자</td>
+    <td style="color:#c0392b;font-weight:700;">★ 수강신청 최소 학점 미만/수강신청 최대 학점 초과한 자 &nbsp;※ 현장실습 미포함, e러닝 포함</td>
+  </tr>
+  <tr><td style="text-align:center;">5</td><td>졸업학점 이수기준 미달자</td>
+    <td>
+      <strong>[졸업 최저 이수학점]</strong><br>
+      ■ 2018 이전 교육과정 적용 학생<br>
+      &nbsp;&nbsp;- 2년제 학과: 4학기 이상자 중 교양 8학점, 전공 50학점, 총 80학점 이상 취득<br>
+      &nbsp;&nbsp;- 3년제 학과: 6학기 이상자 중 교양 12학점, 전공 80학점, 총 120학점 이상 취득<br>
+      ■ 2019 이후 교육과정 적용 학생<br>
+      &nbsp;&nbsp;- 2년제 학과: 4학기 이상자 중 교양 8학점, 전공 60학점, 총 72학점 이상 취득<br>
+      &nbsp;&nbsp;- 3년제 학과: 6학기 이상자 중 교양 12학점, 전공 90학점, 총 108학점 이상 취득
+    </td>
+  </tr>
+  <tr style="background:#fff0ee!important;">
+    <td style="text-align:center;">6</td>
+    <td style="color:#c0392b;font-weight:700;">중복 수강자 리스트</td>
+    <td>
+      <span style="color:#c0392b;font-weight:700;">기 이수 과목 중 금 학기 중복 신청한 과목</span><br>
+      ※ 취득성적이 C+이하인 과목에 대한 중복 신청은 재수강 신청이므로 중복수강 오류 아니며, 중복수강의 경우 기존 수강과목의 취득학점은 삭제되므로 졸업학점 관리 유의<br>
+      <span style="color:#888;font-size:12px;">(예:공업수학 2021-1학기 3학점 C+, 2023-1학기 재수강 시 2021-1학기 C+ 3학점은 삭제되며, 2023-1학기 새로 취득한 학점 반영)</span>
+    </td>
+  </tr>
+  <tr><td style="text-align:center;">7</td><td>F재수강 대상자 리스트</td><td>기 수강 과목 중 F학점 부여받은 자 &nbsp;※ 필수 과목을 F받은 경우 반드시 재수강 해야 졸업 가능</td></tr>
+  <tr><td style="text-align:center;">8</td><td>등록자 중 미복학자</td><td>등록금 납부하였으나 복학 신청(승인)하지 않은 자</td></tr>
+  <tr><td style="text-align:center;">9</td><td>개인별 타학과 수강학점 현황</td>
+    <td>
+      - 개방복합교과목 수업 이수 시 재학기간 내 수강 한 순서대로 6학점까지 이수구분을 '전공선택'으로 인정하고, 그 이상 수강한 과목은 '일반선택' 학점으로 인정(복수전공 및 융합전공 이수자, 자유전공학과 예외)<br>
+      - 수강학과가 '기초융합교육원'인 교과목은 교양강좌이므로 타과 교과목 수강 아님(타과 수강 학점 합계 제외)
+    </td>
+  </tr>
+  <tr style="background:#fff9c4!important;">
+    <td style="text-align:center;font-weight:700;">10</td>
+    <td style="color:#c0392b;font-weight:700;">강의시간표 중복자 현황★</td>
+    <td style="color:#c0392b;font-weight:700;">
+      동일 시간에 2과목 이상 수강신청한 경우<br>
+      ※ 수강신청 기간 이후 학과 강의시간표가 변경된 경우 발생<br>
+      ※ 대상자에게 변경 사유 등 안내 후 학생 동의 하에 수강 변경 처리
+    </td>
+  </tr>
+  <tr><td style="text-align:center;">11</td><td>재학생(복학) 중 미등록자</td><td>재학생 및 복학승인이 된 학생 중 등록하지 않은 자 &nbsp;※ 등록기간 이후 확인</td></tr>
+  <tr style="background:#fff0ee!important;">
+    <td style="text-align:center;">12</td>
+    <td style="color:#c0392b;font-weight:700;">전필 수강신청 누락자 현황</td>
+    <td>
+      <span style="color:#c0392b;font-weight:700;">개설된 전필 과목 수강신청 안 한 경우 ⇒ 전필과목 미이수로 유급 또는 졸업 불가</span><br>
+      ※ [전공필수과목 수강신청 누락자 현황] 메뉴는 직전 학기까지 전공필수 과목 중 학생이 수강하지 않은 과목들을 표시함<br>
+      ※ 전과생은 전과 이전 학과의 전필과목은 이수하지 않아도 되나 전과한 학과의 전필과목(1,2,3학년)은 반드시 이수해야 함 ⇒ 본 항목에는 표시되지 않으니 유의해야 함(개인별 확인 필요)<br>
+      ※ 복학 또는 학적 변동 이전의 미취득(F/NP)한 전공필수 과목도 반드시 이수해야 졸업 가능<br>
+      ※ 폐지된 교과목은 이수하지 않아도 졸업 가능(대체과목 있을 시 이수 필요)
+    </td>
+  </tr>
+  <tr style="background:#fff0ee!important;">
+    <td style="text-align:center;">13</td>
+    <td style="color:#c0392b;font-weight:700;">전필 수강신청 누락자 현황 (당해)</td>
+    <td>
+      <span style="color:#c0392b;font-weight:700;">금학기 개설된 전공필수 교과목 수강신청을 누락한 학생</span><br>
+      ※ 휴학생은 복학 후 교육과정에 따라 전공필수 과목 수강<br>
+      ※ 유급생은 학년이 계속 유지되므로 목록에서 조회됨(취득여부 란 확인)<br>
+      ※ 수강신청 자체를 하지 않은 학생은 누락자에서 제외됨
+    </td>
+  </tr>
+  <tr><td style="text-align:center;">14</td><td>재학생 중 미수강자 명단</td>
+    <td>
+      <span style="color:#c0392b;font-weight:700;">재학생 중 수강신청 하지 않은 자 &nbsp;※ 등록 기간 이후 확인</span><br>
+      ※ 유급자(4학기 이상 이수자, 3년제 6학기)는 수강신청 학점에 따라 등록금이 생성됨. 재학 예정인 학생은 수강신청 할 수 있도록 협조. 휴학 예정자는 개강 전 휴학 처리될 수 있도록 협조
+    </td>
+  </tr>
+  <tr><td style="text-align:center;">15</td><td>e-러닝 수강 및 취득학점 현황</td>
+    <td>
+      <span style="color:#1565c0;font-weight:700;">학생이 e-러닝 과목을 수강하여 기 취득한 학점, 이번 학기 수강 예정 학점, 총 취득 예정 학점 조회</span><br>
+      ※ e-러닝 수강 가능 학점은 적용받는 교육과정에 따라 다르므로 학생별 수강신청 학점 확인 요망(현재기준, 변경 예정)<br>
+      &nbsp;&nbsp;- 2019 이후 교육과정: 학기당 4학점, 재학기간내 최대 10학점(3년제 15학점)<br>
+      &nbsp;&nbsp;- 2018 교육과정년도: 학기당 6학점, 재학기간내 최대 20학점(3년제 30학점)
+    </td>
+  </tr>
+  <tr><td style="text-align:center;">16</td><td>e-러닝 수강과목 리스트</td><td>학생별 e-러닝 수강내역 조회 가능</td></tr>
+  </table>
+  </div>
+  </div>
+</div></div>
+</div>
+
+<div class="tab" id="t6">
+<div class="ptt">⑦ 기타업무</div>
+
+<div class="sc"><div class="sth">👨‍🏫 겸임교원 이론 교과목 담당 사유서 제출 〈서식 6〉</div><div class="sb">
+  <div class="dlb"><div class="dd">📅 제출 기간</div><div class="dc"><strong>2026.7.14(화) 10:00 ~ 7.22(수) 16:00</strong></div></div>
+  <div class="sub">가. 제출 근거</div>
+  <div class="rb"><div class="rt">📜 고등교육법 시행령 제7조(겸임교원 등)</div>
+  겸임교원: 순수 학술이론 과목이 아닌 <strong>실무·실험·실기 등 산업체 현장 실무경험을 필요로 하는 교과</strong>를 교수하기 위해 임용된 자<br>
+  가. 조교수 이상 자격 기준에 해당하는 자로서 관련 분야에 전문지식이 있는 자<br>
+  나. 교수 및 연구내용이 원소속기관의 직무내용과 유사한 자<br>
+  다. 원소속기관에서 상시(유사경력 3년 이상) 근무하고 있는 현직 근로자 (기간제·단시간 근로자 제외)<br>
+  라. 임용기간이 1년 이상으로 계약된 자</div>
+  <div class="sub">나. 제출 대상</div>
+  <p>겸임교원 중 실습교과목 외 <strong>이론교과목을 담당하는 학과(전공)</strong></p>
+  <div class="hr">🚨 겸임교원 교과분담 이론교과목만 배정 불가 (2022학년도 제9차 수업관리운영위원회 의결사항)</div>
+  <div class="sub">다. 제출 방법</div>
+  <p>수업진행관련서식 <strong>〈서식6〉 [겸임교원 교과목 담당 사유서]</strong> 작성 및 정자서명 후 <strong>원본 제출</strong></p>
+  <div class="sub">라. 유의사항</div>
+  <ul class="dl">
+  <li>강의계획서에 <strong>'실습(실무·실험·실기)' 수업내용 명시</strong></li>
+  <li>이론 교과목 담당 겸임교원 사유서 제출 및 위원회 심의 (추후 업무연락 발송 예정)</li>
+  </ul>
+  <div class="hr">🔴 이론교과목만 담당할 경우 겸임교원 자격을 상실할 수 있음<br>겸임교원이 1개 강좌도 담당하지 않을 경우, 면직 처리될 수 있음</div>
+  <div class="note">확인: 종합정보 &gt; 수업 &gt; 보고서(교육과정) &gt; 교원시간표 자가점검 [6번 항목 X 여부 확인]</div>
+</div></div>
+
+<div class="sc"><div class="sth">🏢 전임교원 외부출강 허가원 제출</div><div class="sb">
+  <div class="sub">가. 제출 기간</div>
+  <div class="dlb"><div class="dd">📅 제출 기간</div><div class="dc"><strong>2026.7.14(화) 14:00 ~ 7.22(수) 16:00</strong></div></div>
+  <div class="sub">나. 입력 방법</div>
+  <div class="note"><b>경로:</b> 종합정보시스템 &gt; 수업 &gt; 강좌관리 &gt; 전임교원외부출강등록</div>
+  <div class="sub">다. 제출 방법</div>
+  <div class="sl">
+  <div class="si"><div class="sn">1</div><div>외부출강 내용 등록 (종합정보시스템)</div></div>
+  <div class="si"><div class="sn">2</div><div>외부출강허가원 출력</div></div>
+  <div class="si"><div class="sn">3</div><div>본인 및 학과장 날인</div></div>
+  <div class="si"><div class="sn">4</div><div>교무처 학사지원팀 전자문서(업무연락) 제출</div></div>
+  </div>
+  <div class="sub">라. 유의사항</div>
+  <ul class="dl">
+  <li>학칙시행세칙 제25조의3에 의거 <strong>전임교원(일반·산학협력중점·산학협력·강의전담·외국인교원 포함)은 외부기관 출강 시 사전에 총장의 허가 필수</strong></li>
+  <li>본교 강의시수 + 외부출강 시수의 합이 <strong>교원 한계 시수를 초과하지 않아야 함</strong> (사이버강의도 동일)<br>
+  예) 강의전담교원(한계 24시간): 본교 15시간 + 외부출강 10시간 = 25시간 → <strong style="color:#c0392b">불가</strong></li>
+  <li>외부출강은 교내 강의가 없는 날을 택하여 <strong>주 1회 초과 불가</strong></li>
+  <li>사전에 총장 허가를 득하지 않고 외부기관 출강 시 불이익 발생</li>
+  </ul>
+  <div class="hy">💡 외부출강 시 <strong>겸직 허가 신청</strong>도 함께 해야 함 → 겸직허가신청서 및 공문서 제출 (문의: 교원인사 담당 ☎ 318)</div>
+  <div class="note">※ 교과분담 및 강의시간표 변경 시 외부출강허가원 내용이 변동 없는지 반드시 확인</div>
+</div></div>
+
+<div class="sc"><div class="sth">📊 학사운영투명성지수 평가 항목</div><div class="sb">
+  <table><tr><th>항목</th><th>세부항목</th><th>관련 규정</th><th>기준</th><th>배점</th></tr>
+  <tr><td rowspan="2">수업운영계획의 투명성</td><td>교과분담표 입력기간 준수</td><td>수업운영에 관한 규정</td><td>교무처 지정기간</td><td>15</td></tr>
+  <tr><td>강의시간표 입력기간 준수</td><td>학사내규 제25조</td><td>교무처 지정기간</td><td>15</td></tr>
+  <tr><td>강좌정보 공개의 투명성</td><td>강의계획서 입력기간 준수 / 수업설계 입력기간 준수 (강의계획서, 평가계획서, 진단평가문항관리, 직무수행능력평가 내용관리)</td><td>수업 운영에 관한 규정</td><td>교무처 지정기간</td><td>15</td></tr>
+  </table>
+  <div class="note">※ 학사운영투명성지수: 1학기(8월)와 1학기(2월)에 각각 산출, 그 결과의 평균값을 일반교원 업적평가에 반영. 교무처에서 주관하여 평가</div>
+</div></div>
+</div>
+
+<script>
+// ── 검색 기능 ──────────────────────────────
+var srchMatches = [];
+var srchIdx = 0;
+var srchOrigHTML = {}; // 탭별 원본 HTML 백업
+
+function doSearch() {
+  var kw = document.getElementById('srchInput').value.trim();
+  clearHighlights();
+  if (!kw) {
+    document.getElementById('srchNav').style.display = 'none';
+    document.getElementById('srchClear').style.display = 'none';
+    return;
+  }
+  document.getElementById('srchClear').style.display = '';
+
+  // 모든 탭을 검색 대상으로
+  var tabs = document.querySelectorAll('.tab');
+  srchMatches = [];
+
+  tabs.forEach(function(tab) {
+    highlightInNode(tab, kw);
+  });
+
+  srchMatches = Array.from(document.querySelectorAll('mark.sh'));
+  srchIdx = 0;
+
+  var nav = document.getElementById('srchNav');
+  if (srchMatches.length > 0) {
+    nav.style.display = 'flex';
+    goToMatch(0);
+  } else {
+    nav.style.display = 'none';
+    document.getElementById('srchCount').textContent = '결과 없음';
+  }
+}
+
+function highlightInNode(node, kw) {
+  if (node.nodeType === 3) { // text node
+    var txt = node.textContent;
+    var lower = txt.toLowerCase();
+    var kwLower = kw.toLowerCase();
+    var idx = lower.indexOf(kwLower);
+    if (idx === -1) return;
+    var frag = document.createDocumentFragment();
+    var last = 0;
+    while (idx !== -1) {
+      frag.appendChild(document.createTextNode(txt.slice(last, idx)));
+      var mark = document.createElement('mark');
+      mark.className = 'sh';
+      mark.textContent = txt.slice(idx, idx + kw.length);
+      frag.appendChild(mark);
+      last = idx + kw.length;
+      idx = lower.indexOf(kwLower, last);
+    }
+    frag.appendChild(document.createTextNode(txt.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  } else if (node.nodeType === 1 && node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE' && node.tagName !== 'INPUT' && node.tagName !== 'BUTTON') {
+    Array.from(node.childNodes).forEach(function(child) {
+      highlightInNode(child, kw);
+    });
+  }
+}
+
+function clearHighlights() {
+  document.querySelectorAll('mark.sh').forEach(function(mark) {
+    var parent = mark.parentNode;
+    parent.replaceChild(document.createTextNode(mark.textContent), mark);
+    parent.normalize();
+  });
+  srchMatches = [];
+  document.getElementById('srchCount').textContent = '';
+}
+
+function goToMatch(idx) {
+  srchMatches.forEach(function(m) { m.classList.remove('cur'); });
+  if (srchMatches.length === 0) return;
+  srchIdx = (idx + srchMatches.length) % srchMatches.length;
+  var cur = srchMatches[srchIdx];
+  cur.classList.add('cur');
+  document.getElementById('srchCount').textContent = (srchIdx+1) + ' / ' + srchMatches.length + '건';
+
+  // 해당 탭으로 이동
+  var tabEl = cur.closest('.tab');
+  if (tabEl) {
+    var tabId = tabEl.id;
+    var tabIdx = ['t0','t1','t2','t3','t7','t4','t5','t6'].indexOf(tabId);
+    if (tabIdx !== -1) sw(tabIdx);
+  }
+  setTimeout(function() {
+    cur.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 100);
+}
+
+function nextMatch() { goToMatch(srchIdx + 1); }
+function prevMatch() { goToMatch(srchIdx - 1); }
+
+function clearSearch() {
+  document.getElementById('srchInput').value = '';
+  clearHighlights();
+  document.getElementById('srchNav').style.display = 'none';
+  document.getElementById('srchClear').style.display = 'none';
+}
+// ────────────────────────────────────────────
+
+var TABS = ['t0','t1','t2','t3','t7','t4','t5','t6'];
+
+function adjustFixed(){
+  var hdr = document.querySelector('.hdr');
+  var tnav = document.querySelector('.tnav');
+  var hh = hdr ? hdr.offsetHeight : 0;
+  if(tnav){
+    tnav.style.top = hh + 'px';
+    var th = tnav.offsetHeight;
+    document.body.style.paddingTop = (hh + th) + 'px';
+  }
+}
+window.addEventListener('load', adjustFixed);
+window.addEventListener('resize', adjustFixed);
+adjustFixed();
+
+var TBTNS = document.querySelectorAll('.tbtn');
+var TNAMES = ['① 강의실·실습실 사용안내','② 분반 및 폐강신청서 제출','③ 수강인원 / 수강반','④ 수업진행서류 전산입력','④-1 교원시간표 자가점검','⑤ 강의계획서 및 수업설계 입력','⑥ 재학생 수강반 변경·수강신청','⑦ 전임교원 외부출강 허가원'];
+
+function sw(idx){
+  TABS.forEach(function(id,i){
+    var el = document.getElementById(id);
+    if(i===idx){ el.classList.add('on'); } else { el.classList.remove('on'); }
+  });
+  var btns = document.querySelectorAll('.tnav .tbtn');
+  btns.forEach(function(btn,i){
+    if(i===idx){ btn.classList.add('on'); } else { btn.classList.remove('on'); }
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function doPrint(idx){
+  // 인쇄할 탭의 HTML 추출
+  var css = '';
+  for(var i=0;i<document.styleSheets.length;i++){
+    try{
+      var rules = document.styleSheets[i].cssRules||document.styleSheets[i].rules;
+      for(var j=0;j<rules.length;j++){ css += rules[j].cssText + '\n'; }
+    }catch(e){}
+  }
+
+  var win = window.open('','_blank','width=900,height=700');
+  if(!win){ alert('팝업이 차단되었습니다. 팝업 허용 후 다시 시도해주세요.'); return; }
+
+  var body = '';
+  if(idx === -1){
+    // 전체 인쇄
+    TABS.forEach(function(id,i){
+      var el = document.getElementById(id);
+      var ptt = el.querySelector('.ptt');
+      var orig = ptt ? ptt.style.display : '';
+      if(ptt) ptt.style.display = 'block';
+      body += '<div style="display:block;padding:10px 20px 30px;">' + el.innerHTML + '</div>';
+      if(ptt) ptt.style.display = orig;
+    });
+  } else {
+    // 단일 탭 인쇄
+    var el = document.getElementById(TABS[idx]);
+    body = '<div style="padding:10px 20px 30px;">' + el.innerHTML + '</div>';
+  }
+
+  win.document.write('<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">');
+  win.document.write('<title>' + (idx===-1 ? '전체' : TNAMES[idx]) + '</title>');
+  win.document.write('<style>');
+  win.document.write('@import url(\'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap\');');
+  win.document.write('*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}');
+  win.document.write('body{font-family:\'Noto Sans KR\',\'맑은 고딕\',sans-serif;font-size:13px;line-height:1.7;color:#1c2637;background:#fff;padding:10px;}');
+  win.document.write('.ptt{display:block!important;font-size:14px;font-weight:700;color:#1a3a6b;background:#e8f0fb;border-left:5px solid #1a3a6b;padding:7px 13px;margin:16px 0 10px;-webkit-print-color-adjust:exact;}');
+  win.document.write('.sc{background:#fff;border:1px solid #c0cce0;border-radius:8px;margin-bottom:14px;overflow:hidden;page-break-inside:avoid;}');
+  win.document.write('.sth{background:#e8f0fb!important;border-bottom:2px solid #2a5298;padding:9px 15px;font-size:13px;font-weight:700;color:#1a3a6b;-webkit-print-color-adjust:exact;}');
+  win.document.write('.sb{padding:12px 15px;}');
+  win.document.write('.sub{font-size:12.5px;font-weight:700;color:#1a3a6b;margin:12px 0 6px;padding-left:8px;border-left:3px solid #2a5298;}');
+  win.document.write('.sub:first-child{margin-top:0;}');
+  win.document.write('table{width:100%;border-collapse:collapse;font-size:11.5px;margin:7px 0;}');
+  win.document.write('th{background:#1a3a6b!important;color:#fff!important;padding:7px 9px;text-align:center;font-weight:600;border:1px solid rgba(255,255,255,.15);-webkit-print-color-adjust:exact;}');
+  win.document.write('td{padding:6px 9px;border:1px solid #d0d8e8;vertical-align:top;line-height:1.5;}');
+  win.document.write('tr:nth-child(even) td{background:#f8fafc!important;-webkit-print-color-adjust:exact;}');
+  win.document.write('.hr{background:#fff0ee!important;border:1px solid #f5bfb0;border-left:4px solid #e8501a;border-radius:5px;padding:8px 12px;margin:6px 0;font-size:12.5px;color:#c0392b;font-weight:600;-webkit-print-color-adjust:exact;}');
+  win.document.write('.hy{background:#fffbea!important;border:1px solid #f0d080;border-left:4px solid #f5a623;border-radius:5px;padding:8px 12px;margin:6px 0;font-size:12.5px;color:#7a5200;font-weight:600;-webkit-print-color-adjust:exact;}');
+  win.document.write('.note{background:#f0f4fa!important;border-radius:5px;padding:7px 11px;font-size:12px;color:#4a5568;margin:4px 0;border-left:3px solid #8bacd4;-webkit-print-color-adjust:exact;}');
+  win.document.write('.note b{color:#1a3a6b;}');
+  win.document.write('ul.dl,ol.dl{padding-left:17px;margin:4px 0;}');
+  win.document.write('ul.dl li,ol.dl li{margin-bottom:3px;line-height:1.6;font-size:12.5px;}');
+  win.document.write('.badge{display:inline-block;padding:1px 6px;border-radius:8px;font-size:10.5px;font-weight:700;margin-right:3px;-webkit-print-color-adjust:exact;}');
+  win.document.write('.bb{background:#dbeafe!important;color:#1e40af!important;}.br{background:#fee2e2!important;color:#b91c1c!important;}');
+  win.document.write('.bg{background:#d1fae5!important;color:#065f46!important;}.bo{background:#ffedd5!important;color:#9a3412!important;}');
+  win.document.write('.dlb{display:flex;align-items:flex-start;background:#fff7f0!important;border:1.5px solid #f5a623;border-radius:7px;padding:8px 12px;margin:6px 0;gap:9px;-webkit-print-color-adjust:exact;}');
+  win.document.write('.dlb .dd{font-size:12.5px;font-weight:700;color:#c05000;min-width:90px;flex-shrink:0;}');
+  win.document.write('.dlb .dc{font-size:12.5px;}');
+  win.document.write('.rb{background:#f9fafb!important;border:1px solid #cbd5e1;border-radius:7px;padding:9px 13px;margin:7px 0;font-size:12px;color:#374151;-webkit-print-color-adjust:exact;}');
+  win.document.write('.rb .rt{font-size:11px;font-weight:700;color:#64748b;margin-bottom:4px;}');
+  win.document.write('.ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:7px 0;}');
+  win.document.write('.ic{background:#e8f0fb!important;border:1px solid #d0d8e8;border-radius:7px;padding:9px 11px;-webkit-print-color-adjust:exact;}');
+  win.document.write('.ic .il{font-size:10.5px;color:#64748b;font-weight:600;margin-bottom:2px;}');
+  win.document.write('.ic .iv{font-size:12.5px;font-weight:700;color:#1a3a6b;}');
+  win.document.write('.sl{display:flex;flex-direction:column;gap:5px;margin:7px 0;}');
+  win.document.write('.si{display:flex;gap:9px;align-items:flex-start;}');
+  win.document.write('.sn{background:#1a3a6b!important;color:#fff!important;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px;-webkit-print-color-adjust:exact;}');
+  win.document.write('p{font-size:12.5px;margin:3px 0;line-height:1.7;}');
+  win.document.write('strong{color:#1a3a6b;}');
+  win.document.write('@page{margin:15mm;}');
+  win.document.write('</style></head><body>');
+  win.document.write('<div style="margin-bottom:12px;padding:10px 16px;background:#1a3a6b;color:#fff;border-radius:6px;">');
+  win.document.write('<strong style="font-size:15px;color:#fff;">📋 2026-2학기 수업 진행서류 작성 및 제출 방법</strong><br>');
+  win.document.write('<span style="font-size:11px;opacity:.8;">2026.7 / 교무처 학사지원팀</span></div>');
+  win.document.write(body);
+  win.document.write('</body></html>');
+  win.document.close();
+  win.onload = function(){ win.focus(); win.print(); };
+}
+</script>
+</body>
+</html>
+apps-fileview.texmex_20260618.00_p1
+2026_2학기_수업진행서류_안내 (40)_일자수정.txt
+2026_2학기_수업진행서류_안내 (40)_일자수정.txt 표시 중입니다.
